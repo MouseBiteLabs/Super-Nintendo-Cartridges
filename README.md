@@ -14,11 +14,11 @@ This is a repository listing all of my Super Nintendo Cartridge board variants. 
 
 ## Naming Convention
 
-| SHVC                      | - | 8                 | X               | J              | 4            | D                                    | - | A                                       |
-|---------------------------|---|-------------------|-----------------|----------------|--------------|--------------------------------------|---|-----------------------------------------|
-| Super Home Video Computer |   | Max ROM Size (MB) | Ex Mode Support | Mapper Type(s) | Max RAM Size | Multicart Support                    |   | Memory Family                           |
-|                           |   | 1                 | N = No          | L = LoROM      | 0 = None     | S = Single game                      |   | A = New EEPROM (M29F160)                |
-|                           |   | 2                 | X = Yes         | H = HiROM      | 1 = 2 KB     | D = Multicart (split max ROM space)  |   | B = NOS EEPROM (29F016, 29F032, 29F033) |
-|                           |   | 4                 |                 | J = Both       | 2 = 8 KB     | M = Multicart (double max ROM space) |   | C = UV EPROMs (27C160, 27C322, etc)     |
-|                           |   | 8                 |                 |                | 4 = 32 KB    |                                      |   |                                         |
-|                           |   |                   |                 |                | 8 = 128 KB   |                                      |   |                                         |
+| SHVC                      | \- | 8                 | X               | J              | 4            | D                                    | \- | 01       | A                                       |
+| ------------------------- | -- | ----------------- | --------------- | -------------- | ------------ | ------------------------------------ | -- | -------- | --------------------------------------- |
+| Super Home Video Computer |    | Max ROM Size (MB) | Ex Mode Support | Mapper Type(s) | Max RAM Size | Multicart Support                    |    | Revision | Memory Family                           |
+|                           |    | 1                 | N = No          | L = LoROM      | 0 = None     | S = Single game                      |    |          | A = New EEPROM (M29F160)                |
+|                           |    | 2                 | X = Yes         | H = HiROM      | 1 = 2 KB     | D = Multicart (split max ROM space)  |    |          | B = NOS EEPROM (29F016, 29F032, 29F033) |
+|                           |    | 4                 |                 | J = Both       | 2 = 8 KB     | M = Multicart (double max ROM space) |    |          | C = UV EPROMs (27C160, 27C322, etc)     |
+|                           |    | 6                 | SA =            | SA1            | 4 = 32 KB    |                                      |    |          |                                         |
+|                           |    | 8                 |                 |                | 8 = 128 KB   |                                      |    |          |                                         |
