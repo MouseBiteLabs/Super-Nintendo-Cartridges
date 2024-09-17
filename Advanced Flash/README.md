@@ -1,6 +1,8 @@
-# Super Nintendo Advanced Flash Cartridge
+# Super Nintendo Advanced Flash Cartridge (SNES-8XJ4D-01A)
 
 This is a new and improved Super Nintendo cartridge circuit board design that is capable of being flashed via the <a href="https://github.com/sanni/cartreader">Open Source Cart Reader (OSCR) by sanni</a>. Alternatively, you can also flash the ROM chips before soldering them to the board through the use of a programmer like the <a href="https://xgecu.myshopify.com/products/xgecu-new-t48-tl866-3gprogrammer-v12-01-support-28000-ics-for-spi-nor-nand-flash-emmc-bga153-162-169-100-221-tsop-sop-plcc">T48 programmer</a> with the <a href="https://xgecu.myshopify.com/products/100-original-xgecu-adp_f48_ex-1-tsop48-special-adapter-for-nor-flash-only-use-on-t48-tl866-3g-programmer">TSOP48 adapter</a>. This cartridge is made entirely from **brand new off the shelf components.** No donors are required, and you don't need to rely on AliExpress or eBay for parts!
+
+![image](https://github.com/user-attachments/assets/80808ef6-8287-4d5b-932e-dab7ef5ffa02)
 
 This cartridge covers over 95% of the entire SNES library. You can backup games onto it with the following settings:
 - All memory maps supported: LoROM, HiROM, ExLoROM, and ExHiROM
@@ -46,13 +48,46 @@ You can use the zipped folder at any board fabricator you like. You may also buy
 
 ## How to Program
 
+Coming soon.
+
 ## Board Configurations
+
+You *do not* need every single part on this board to make a game. The game you want to make is mainly dependent on the memory mapping (LoROM, HiROM, etc), the ROM size, and the RAM size. Depending on your needs, you only need to solder on certain components, which you can find below in the BOM section.
+
+- **Every board needs Group A components.** You can make LoRom or HiROM games that have no RAM and are up to 4 MB large with this configuration.
+- If you need RAM space, **add Group B components.** This will add 32 KB of RAM space.
+- If your game is larger than 4 MB, it will use the ExLoROM or ExHiROM memory mapping. **Add Group C components for this.**
+- For multicarts, you can make a board with two games on it up to 4 MB each. You will need Group C components, **as well as Group D components.**
 
 ## Switches
 
+For SW1 through SW5, you can either use the DIP switch as indicated in the BOM below (in the "Optional" sections), or you can jumper the pads underneath the switch to turn the switch "ON". In this example, positions 1 and 2 are "ON"; 3 and 4 are "OFF":
+
+![image](https://github.com/user-attachments/assets/ef28e52b-cb4e-4246-bc94-9d3e4eb2fbbe)
+
+### Switch 1 - Memory Mapping
+
+This is the LoROM/HiROM switch. Turn it on to enter LoROM mode, or turn it off for HiROM mode.
+
+### Switch 2 - SRAM Size
+
+This sets the RAM size for the game, assuming you have the RAM chip installed. The maximum allocated RAM space *per game* on this board is only 32 KB, even if you put a 128 KB RAM chip (you will need the 128 KB chip for multicarts). Some games will care that you have the correct RAM size, or else they will activate piracy protection, so you should try to match the settings your game calls for. Note that DIP positions 1 and 2, and 3 and 4 should be changed together simultaneously. You shouldn't have to ever move individual switches independently.
+
+- For 2 KB of RAM, set all switches OFF.
+- For 8 KB of RAM, set positions 1 and 2 ON, and 3 and 4 OFF.
+- For 32 KB of RAM, set all positions ON.
+
+### Switch 3 - Ex Mode
+
+Switch this ON to change the setting on SW1 to ExLoROM/ExHiROM. Switch it OFF to keep SW1 as a LoROM/HiROM switch.
+
+### Switch 4 - Multicart Programming
+
+### Switch 5 - Multicart Enable/Disable
+
 ## Bill of Materials (BOM)
 
-
+The component groups required for the build you want to make are detailed above. Note that the "optional" groups mostly only contain the switches, as you can manually set the switch position with a 0-ohm resistor (or, lack of a resistor). Remember, shorting the pads means the switch is ON, and keeping the pads depopulated means the switch is OFF.
 
 ### Group A - 4 MB ROM, No RAM
 
@@ -157,3 +192,13 @@ You can use the zipped folder at any board fabricator you like. You may also buy
 | RS5B      | 0 ohm               | 0603           | Resistor (Jumper)  | [https://mou.sr/4e1ABQg](https://mou.sr/4e1ABQg) |
 | SW4       | DS04-254-2-02BK-SMT | 2-position DIP | DIP Switch (2-pos) | [https://mou.sr/3B7BqZr](https://mou.sr/3B7BqZr) |
 | SW5       | DS04-254-2-02BK-SMT | 2-position DIP | DIP Switch (2-pos) | [https://mou.sr/3B7BqZr](https://mou.sr/3B7BqZr) |
+
+## Revision History
+
+## Resources and Acknowledgements
+
+## License
+
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>. You are able to copy and redistribute the material in any medium or format, as well as remix, transform, or build upon the material for any purpose (even commercial) - but you **must** give appropriate credit, provide a link to the license, and indicate if any changes were made.
+
+©MouseBiteLabs 2024
