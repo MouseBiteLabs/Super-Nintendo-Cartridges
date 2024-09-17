@@ -1,1 +1,159 @@
-# Advanced Flash
+# Super Nintendo Advanced Flash Cartridge
+
+This is a new and improved Super Nintendo cartridge circuit board design that is capable of being flashed via the <a href="https://github.com/sanni/cartreader">Open Source Cart Reader (OSCR) by sanni</a>. Alternatively, you can also flash the ROM chips before soldering them to the board through the use of a programmer like the <a href="https://xgecu.myshopify.com/products/xgecu-new-t48-tl866-3gprogrammer-v12-01-support-28000-ics-for-spi-nor-nand-flash-emmc-bga153-162-169-100-221-tsop-sop-plcc">T48 programmer</a> with the <a href="https://xgecu.myshopify.com/products/100-original-xgecu-adp_f48_ex-1-tsop48-special-adapter-for-nor-flash-only-use-on-t48-tl866-3g-programmer">TSOP48 adapter</a>. This cartridge is made entirely from **brand new off the shelf components.** No donors are required, and you don't need to rely on AliExpress or eBay for parts!
+
+This cartridge covers over 95% of the entire SNES library. You can backup games onto it with the following settings:
+- All memory maps supported: LoROM, HiROM, ExLoROM, and ExHiROM
+- Can be programmed to operate as a multicart, changing games by pressing the SNES reset button
+- Up to 8 MB of ROM space for a single game or 4 MB of ROM space for two games
+- Up to 32 KB of RAM space for a single game or two separate banks of 32 KB RAM space for two games
+- All these settings can be changed via DIP switch for easy on-the-fly modifications without soldering
+
+All gerbers and source files can be found in this repo, as this project is fully open source. Please read all instructions before attempting the project.
+
+## Important Things Before You Start
+
+1) When soldering parts on, it's a good idea to put kapton tape or otherwise cover the bottom cartridge edge. You do not want to get solder on the cartridge contacts.
+2) I am not responsible for any damage you do to your self or your property. Attempt this project at your own risk.
+3) I do not guarantee design compatibility. You may encounter issues with certain games. There is also a chance I have made an error in the design or the BOM - if this is the case, I will do everything I can to address the problem as quickly as possible.
+4) If you are using this board to make games other than for personal use, you must have permission from the originator to use and distribute any ROM images or other related material. You are responsible for making sure you adhere to any license requirements.
+
+DO NOT use my circuit boards for profiting from stolen work - this especially includes homebrew content, ROM hacks, and using fan-made labels without permission from the originator. **Support ALL original creators!**
+
+## Board Characteristics and Order Information
+
+The zipped folder contains all the gerber files for this board. The following options **must** be chosen when ordering boards for yourself.
+
+- Thickness: 1.2mm
+- Surface Finish: ENIG
+- Gold Fingers: Yes, 30° chamfer
+
+**I sell this blank circuit board on Etsy, so you don't have to buy a bunch of multiples if you don't want to.** (Click the banner!)
+
+<a href="https://mousebitelabs.etsy.com/"><img src="https://github-production-user-asset-6210df.s3.amazonaws.com/97127539/239718536-5c9aefe3-0628-4434-b8d8-55ff80ac3bbc.png" alt="PCB from Etsy" /></a> 
+
+You can use the zipped folder at any board fabricator you like. You may also buy the board from PCBWay using this link (disclosure: I receive 10% of the sale value to go towards future PCB orders of my own):
+
+<a href="https://www.pcbway.com/"><img src="https://www.pcbway.com/project/img/images/frompcbway-1220.png" alt="PCB from PCBWay" /></a>
+
+## Required Equipment
+
+- You will need basic tools, like a soldering iron, hot plate, and/or hot air rework station.
+- You need a way to program the ROM chip(s).
+  - This can be done with the <a href="https://github.com/sanni/cartreader">OSCR</a> to load the game and save data onto the catridge, after the cartridge is assembled.
+  - Alternatively, the <a href="https://xgecu.myshopify.com/products/xgecu-new-t48-tl866-3gprogrammer-v12-01-support-28000-ics-for-spi-nor-nand-flash-emmc-bga153-162-169-100-221-tsop-sop-plcc">T48 programmer</a> with the <a href="https://xgecu.myshopify.com/products/100-original-xgecu-adp_f48_ex-1-tsop48-special-adapter-for-nor-flash-only-use-on-t48-tl866-3g-programmer">TSOP48 adapter</a> can program the ROM chip(s). The downside to this is that if you screw up the programming, you'll have to desolder the chips and program them again.
+- This cartridge uses the PIC12F629 with the <a href="https://sd2snes.de/blog/cool-stuff/supercic">SuperCIC code</a> to fake out the lockout chip. You will need a way to program these PIC chips. I use the T48 to do so, but you can also use something like the <a href="https://www.microchip.com/en-us/development-tool/pg164130">PICkit 3.</a> Note that if you have region modded your SNES, you won't need the lockout chips in the cartridges.
+
+## How to Program
+
+## Board Configurations
+
+## Switches
+
+## Bill of Materials (BOM)
+
+
+
+### Group A - 4 MB ROM, No RAM
+
+| Reference | Value/Part Number | Package       | Description      | Source                                           |
+| --------- | ----------------- | ------------- | ---------------- | ------------------------------------------------ |
+| C1        | 0.1u              | 0603          | Capacitor (MLCC) | [https://mou.sr/3ENc15O](https://mou.sr/3ENc15O) |
+| C2        | 0.1u              | 0603          | Capacitor (MLCC) | [https://mou.sr/3ENc15O](https://mou.sr/3ENc15O) |
+| C3        | 0.1u              | 0603          | Capacitor (MLCC) | [https://mou.sr/3ENc15O](https://mou.sr/3ENc15O) |
+| C4        | 0.1u              | 0603          | Capacitor (MLCC) | [https://mou.sr/3ENc15O](https://mou.sr/3ENc15O) |
+| C7        | 0.1u              | 0603          | Capacitor (MLCC) | [https://mou.sr/3ENc15O](https://mou.sr/3ENc15O) |
+| C8        | 0.1u              | 0603          | Capacitor (MLCC) | [https://mou.sr/3ENc15O](https://mou.sr/3ENc15O) |
+| C9        | 0.1u              | 0603          | Capacitor (MLCC) | [https://mou.sr/3ENc15O](https://mou.sr/3ENc15O) |
+| CC        | 22u               | 1206          | Capacitor (MLCC) | [https://mou.sr/4e4zShm](https://mou.sr/4e4zShm) |
+| R2        | 100k              | 0603          | Resistor         | [https://mou.sr/49bgMnu](https://mou.sr/49bgMnu) |
+| R3        | 10k               | 0603          | Resistor         | [https://mou.sr/3riR7IH](https://mou.sr/3riR7IH) |
+| R4        | 100k              | 0603          | Resistor         | [https://mou.sr/49bgMnu](https://mou.sr/49bgMnu) |
+| R5        | 100k              | 0603          | Resistor         | [https://mou.sr/49bgMnu](https://mou.sr/49bgMnu) |
+| U1        | PIC12F629         | DIP-8, SOIC-8 | Lockout Chip     | [https://mou.sr/3XuEZzO](https://mou.sr/3XuEZzO) |
+| U2        | 74CBTLV3257       | TSSOP-16      | Multiplexer      | [https://mou.sr/3MKJwd1](https://mou.sr/3MKJwd1) |
+| U3        | 74CBTLV3257       | TSSOP-16      | Multiplexer      | [https://mou.sr/3MKJwd1](https://mou.sr/3MKJwd1) |
+| U4        | 74CBTLV3257       | TSSOP-16      | Multiplexer      | [https://mou.sr/3MKJwd1](https://mou.sr/3MKJwd1) |
+| U7        | 74LS139           | TSSOP-16      | Decoder          | [https://mou.sr/4eqzppn](https://mou.sr/4eqzppn) |
+| U8        | M29F160           | TSOP-48       | Flash EEPROM     | [https://mou.sr/3MNWQ0b](https://mou.sr/3MNWQ0b) |
+| U9        | M29F160           | TSOP-48       | Flash EEPROM     | [https://mou.sr/3MNWQ0b](https://mou.sr/3MNWQ0b) |
+
+### Group A (Optional) - Programming header, Lo/Hi switch/jumper
+
+| Reference | Value/Part Number   | Package                  | Description        | Source                                           |
+| --------- | ------------------- | ------------------------ | ------------------ | ------------------------------------------------ |
+| J1        | \--                 | 2x3 pins, 2.54mm spacing | Header (see note)  | N/A                                              |
+| RS1       | 0 ohm               | 0603                     | Resistor (Jumper)  | [https://mou.sr/4e1ABQg](https://mou.sr/4e1ABQg) |
+| SW1       | DS04-254-2-01BK-SMT | 1-position DIP           | DIP Switch (1-pos) | [https://mou.sr/3MK4Lvz](https://mou.sr/3MK4Lvz) |
+
+*Note: J1 is a space that allows you to program the PIC using the standard ISP pinout while the chip is on-board. It is not a required component. If you wish to use it, you will need to pick out a component yourself to use here, as there are different ways to go about using it.
+
+### Group B - adds 32 KB of RAM
+
+| Reference | Value/Part Number   | Package        | Description        | Source                                           |
+| --------- | ------------------- | -------------- | ------------------ | ------------------------------------------------ |
+| B1        | CR2032              | CR2032         | Coin Cell Battery  | [https://mou.sr/3QhcXXc](https://mou.sr/3QhcXXc) |
+| C5        | 0.1u                | 0603           | Capacitor (MLCC)   | [https://mou.sr/3ENc15O](https://mou.sr/3ENc15O) |
+| C6        | 0.1u                | 0603           | Capacitor (MLCC)   | [https://mou.sr/3ENc15O](https://mou.sr/3ENc15O) |
+| C10       | 0.1u                | 0603           | Capacitor (MLCC)   | [https://mou.sr/3ENc15O](https://mou.sr/3ENc15O) |
+| C11       | 0.1u                | 0603           | Capacitor (MLCC)   | [https://mou.sr/3ENc15O](https://mou.sr/3ENc15O) |
+| CB        | 22u                 | 1206           | Capacitor (MLCC)   | [https://mou.sr/4e4zShm](https://mou.sr/4e4zShm) |
+| R1        | 10k                 | 0603           | Resistor           | [https://mou.sr/3riR7IH](https://mou.sr/3riR7IH) |
+| R6        | 130k                | 0603           | Resistor           | [https://mou.sr/3MjXliy](https://mou.sr/3MjXliy) |
+| R7        | 49.9k               | 0603           | Resistor           | [https://mou.sr/3Q3NRZO](https://mou.sr/3Q3NRZO) |
+| R8        | 100k                | 0603           | Resistor           | [https://mou.sr/49bgMnu](https://mou.sr/49bgMnu) |
+| R9        | 100k                | 0603           | Resistor           | [https://mou.sr/49bgMnu](https://mou.sr/49bgMnu) |
+| R10       | 100k                | 0603           | Resistor           | [https://mou.sr/49bgMnu](https://mou.sr/49bgMnu) |
+| R11       | 100k                | 0603           | Resistor           | [https://mou.sr/49bgMnu](https://mou.sr/49bgMnu) |
+| U5        | 74LS139             | TSSOP-16       | Decoder            | [https://mou.sr/4eqzppn](https://mou.sr/4eqzppn) |
+| U6        | 74LS139             | TSSOP-16       | Decoder            | [https://mou.sr/4eqzppn](https://mou.sr/4eqzppn) |
+| U10       | AS6C62256, AS6C1008 | SOP-28, SOP-32 | SRAM               | [https://mou.sr/3ZxG6jd](https://mou.sr/3ZxG6jd) |
+| U11       | TPS3613             | MSOP-10        | Battery Management | [https://mou.sr/45Ir2kh](https://mou.sr/45Ir2kh) |
+
+### Group B (Optional) - RAM size switch/jumpers
+
+| Reference | Value/Part Number   | Package        | Description        | Source                                           |
+| --------- | ------------------- | -------------- | ------------------ | ------------------------------------------------ |
+| RS2A      | 0 ohm               | 0603           | Resistor (Jumper)  | [https://mou.sr/4e1ABQg](https://mou.sr/4e1ABQg) |
+| RS2B      | 0 ohm               | 0603           | Resistor (Jumper)  | [https://mou.sr/4e1ABQg](https://mou.sr/4e1ABQg) |
+| RS2C      | 0 ohm               | 0603           | Resistor (Jumper)  | [https://mou.sr/4e1ABQg](https://mou.sr/4e1ABQg) |
+| RS2D      | 0 ohm               | 0603           | Resistor (Jumper)  | [https://mou.sr/4e1ABQg](https://mou.sr/4e1ABQg) |
+| SW2       | DS04-254-2-04BK-SMT | 4-position DIP | DIP Switch (4-pos) | [https://mou.sr/3MPsI4o](https://mou.sr/3MPsI4o) |
+
+### Group C - Adds 4 MB ROM for ExLoROM and ExHiROM
+
+| Reference | Value/Part Number | Package | Description      | Source                                           |
+| --------- | ----------------- | ------- | ---------------- | ------------------------------------------------ |
+| C12       | 0.1u              | 0603    | Capacitor (MLCC) | [https://mou.sr/3ENc15O](https://mou.sr/3ENc15O) |
+| C13       | 0.1u              | 0603    | Capacitor (MLCC) | [https://mou.sr/3ENc15O](https://mou.sr/3ENc15O) |
+| U12       | M29F160           | TSOP-48 | Flash EEPROM     | [https://mou.sr/3MNWQ0b](https://mou.sr/3MNWQ0b) |
+| U13       | M29F160           | TSOP-48 | Flash EEPROM     | [https://mou.sr/3MNWQ0b](https://mou.sr/3MNWQ0b) |
+
+### Group C (Optional) - Ex Mode switch/jumper
+
+| Reference | Value/Part Number   | Package        | Description        | Source                                           |
+| --------- | ------------------- | -------------- | ------------------ | ------------------------------------------------ |
+| RS3       | 0 ohm               | 0603           | Resistor (Jumper)  | [https://mou.sr/4e1ABQg](https://mou.sr/4e1ABQg) |
+| SW3       | DS04-254-2-01BK-SMT | 1-position DIP | DIP Switch (1-pos) | [https://mou.sr/3MK4Lvz](https://mou.sr/3MK4Lvz) |
+
+### Group D - Enables multicart mode
+
+| Reference | Value/Part Number | Package   | Description      | Source                                           |
+| --------- | ----------------- | --------- | ---------------- | ------------------------------------------------ |
+| C14       | 0.1u              | 0603      | Capacitor (MLCC) | [https://mou.sr/3ENc15O](https://mou.sr/3ENc15O) |
+| C15       | 0.1u              | 0603      | Capacitor (MLCC) | [https://mou.sr/3ENc15O](https://mou.sr/3ENc15O) |
+| R12       | 100k              | 0603      | Resistor         | [https://mou.sr/49bgMnu](https://mou.sr/49bgMnu) |
+| R13       | 10k               | 0603      | Resistor         | [https://mou.sr/3riR7IH](https://mou.sr/3riR7IH) |
+| U14       | 74HC74            | TSSOP-14  | Flip-Flop        | [https://mou.sr/4eroZpu](https://mou.sr/4eroZpu) |
+| U15       | 74AHC1G126        | SOT-353-5 | Tri-State Buffer | [https://mou.sr/3T9Zdim](https://mou.sr/3T9Zdim) |
+
+### Group D (Optional) - Multicart mode switches/jumpers
+
+| Reference | Value/Part Number   | Package        | Description        | Source                                           |
+| --------- | ------------------- | -------------- | ------------------ | ------------------------------------------------ |
+| RS4A      | 0 ohm               | 0603           | Resistor (Jumper)  | [https://mou.sr/4e1ABQg](https://mou.sr/4e1ABQg) |
+| RS4B      | 0 ohm               | 0603           | Resistor (Jumper)  | [https://mou.sr/4e1ABQg](https://mou.sr/4e1ABQg) |
+| RS5A      | 0 ohm               | 0603           | Resistor (Jumper)  | [https://mou.sr/4e1ABQg](https://mou.sr/4e1ABQg) |
+| RS5B      | 0 ohm               | 0603           | Resistor (Jumper)  | [https://mou.sr/4e1ABQg](https://mou.sr/4e1ABQg) |
+| SW4       | DS04-254-2-02BK-SMT | 2-position DIP | DIP Switch (2-pos) | [https://mou.sr/3B7BqZr](https://mou.sr/3B7BqZr) |
+| SW5       | DS04-254-2-02BK-SMT | 2-position DIP | DIP Switch (2-pos) | [https://mou.sr/3B7BqZr](https://mou.sr/3B7BqZr) |
