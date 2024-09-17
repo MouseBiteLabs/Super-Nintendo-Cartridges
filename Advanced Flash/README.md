@@ -4,7 +4,7 @@ This is a new and improved Super Nintendo cartridge circuit board design that is
 
 ![image](https://github.com/user-attachments/assets/80808ef6-8287-4d5b-932e-dab7ef5ffa02)
 
-This cartridge covers over 95% of the entire SNES library. You can backup games onto it with the following settings:
+This cartridge covers over 95% of the entire SNES library, capable of any standard cartridge **but not those with co-processors, such as SA-1 or SuperFX.** You can backup games onto it with the following settings:
 - All memory maps supported: LoROM, HiROM, ExLoROM, and ExHiROM
 - Can be programmed to operate as a multicart, changing games by pressing the SNES reset button (this includes the ability to make two games of the same memory map, or one of each)
 - Up to 8 MB of ROM space for a single game or 4 MB of ROM space for two games
