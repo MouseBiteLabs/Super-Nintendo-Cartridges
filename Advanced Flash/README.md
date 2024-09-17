@@ -6,7 +6,7 @@ This is a new and improved Super Nintendo cartridge circuit board design that is
 
 This cartridge covers over 95% of the entire SNES library. You can backup games onto it with the following settings:
 - All memory maps supported: LoROM, HiROM, ExLoROM, and ExHiROM
-- Can be programmed to operate as a multicart, changing games by pressing the SNES reset button
+- Can be programmed to operate as a multicart, changing games by pressing the SNES reset button (this includes the ability to make two games of the same memory map, or one of each)
 - Up to 8 MB of ROM space for a single game or 4 MB of ROM space for two games
 - Up to 32 KB of RAM space for a single game or two separate banks of 32 KB RAM space for two games
 - All these settings can be changed via DIP switch for easy on-the-fly modifications without soldering
@@ -81,9 +81,16 @@ This sets the RAM size for the game, assuming you have the RAM chip installed. T
 
 Switch this ON to change the setting on SW1 to ExLoROM/ExHiROM. Switch it OFF to keep SW1 as a LoROM/HiROM switch.
 
-### Switch 4 - Multicart Programming
+### Switch 4 and 5 - Multicart Configurations
 
-### Switch 5 - Multicart Enable/Disable
+These two sets of switches control the multicart features on the board. You can make two LoROM games, two HiROM games, or one LoROM game and one HiROM game if you set the "Map Swap" switch to "YES". Here is how to use the switches to program the two games:
+
+- First, set SW5 to "DISABLE"
+- Map Swap can be either setting during programming mode, so just put it in the position you want it for actual gameplay
+- If you are programming two of the same memory map types, put SW1 into the desired memory map mode (SW1 position does not matter if you are using the map swap feature)
+- Program the first game with #1 setting, program the second game with #2 setting
+  - If you are going to use the map swap feature, make sure game 1 is the LoROM game and game 2 is the HiROM game
+- After both games are programmed, set SW5 to "ENABLE"
 
 ## Bill of Materials (BOM)
 
@@ -195,7 +202,16 @@ The component groups required for the build you want to make are detailed above.
 
 ## Revision History
 
+### v1.2
+
+### v1.1
+
+### v1.0
+
 ## Resources and Acknowledgements
+
+- sanni
+- nesdev
 
 ## License
 
