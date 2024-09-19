@@ -2,15 +2,17 @@
 
 This is a repository listing all of my Super Nintendo Cartridge board variants. These *do not* include variants with special chips, such as SA-1 or the Super Game Boy boards. This repository is for the "standard" mapping types.
 
-## SNES Board Links
+Use the following table (or navigate the above folders) for information on each specific baord type. <a href="https://github.com/MouseBiteLabs/Super-Nintendo-Cartridges/wiki">Please also review the wiki for more information.</a>
 
-| **Board Name** | **Board Number**   | **Max ROM Size** | **Max RAM Size** | **Mappings Supported**         | **Multicart Support?**            | **Memory Family Used** |
-|----------------|--------------------|------------------|------------------|--------------------------------|-----------------------------------|------------------------|
-| Advanced Flash | SHVC-8XJ4D-01A     | 8 MB             | 32 KB            | LoROM, HiROM, ExLoROM, ExHiROM | Yes (2 games; 4MB ROM, 32KB RAM)  | Type A (M29F160)       |
-| LoROM Flash    | SHVC-8XL8S-01A     | 8 MB             | 128 KB           | LoROM, ExLoROM                 | No                                | Type A (M29F160)       |
-| HiROM Flash    | SHVC-8XH8S-01A     | 8 MB             | 128 KB           | HiROM, ExHiROM                 | No                                | Type A (M29F160)       |
-| Advanced UV    | SHVC-8XJ8D-01C     | 8 MB             | 128 KB           | LoROM, HiROM, ExLoROM, ExHiROM | Yes (2 games; 4MB ROM, 32KB RAM)  | Type C (27C322)        |
-| Basic UV       | SHVC-4NJ8D-01C     | 4 MB             | 128 KB           | LoROM, HiROM                   | No                                | Type C (27C160)        |
+## SNES Board Variants
+
+| **Board Name**                                                                                                     | **Board Number**   | **Max ROM Size** | **Max RAM Size** | **Mappings Supported**         | **Multicart Support?**            | **Memory Family Used** |
+|--------------------------------------------------------------------------------------------------------------------|--------------------|------------------|------------------|--------------------------------|-----------------------------------|------------------------|
+| <a href="https://github.com/MouseBiteLabs/Super-Nintendo-Cartridges/tree/main/Advanced%20Flash">Advanced Flash</a> | SHVC-8XJ4D-01A     | 8 MB             | 32 KB            | LoROM, HiROM, ExLoROM, ExHiROM | Yes (2 games; 4MB ROM, 32KB RAM)  | Type A (M29F160)       |
+| LoROM Flash                                                                                                        | SHVC-8XL8S-01A     | 8 MB             | 128 KB           | LoROM, ExLoROM                 | No                                | Type A (M29F160)       |
+| HiROM Flash                                                                                                        | SHVC-8XH8S-01A     | 8 MB             | 128 KB           | HiROM, ExHiROM                 | No                                | Type A (M29F160)       |
+| Advanced UV                                                                                                        | SHVC-8XJ8D-01C     | 8 MB             | 128 KB           | LoROM, HiROM, ExLoROM, ExHiROM | Yes (2 games; 4MB ROM, 32KB RAM)  | Type C (27C322)        |
+| Basic UV                                                                                                           | SHVC-4NJ8D-01C     | 4 MB             | 128 KB           | LoROM, HiROM                   | No                                | Type C (27C160)        |
 
 ## Naming Convention
 
