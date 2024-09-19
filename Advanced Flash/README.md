@@ -15,10 +15,11 @@ All gerbers and source files can be found in this repo, as this project is fully
 
 ## Important Things Before You Start
 
-1) When soldering parts on, it's a good idea to put kapton tape or otherwise cover the bottom cartridge edge. You do not want to get solder on the cartridge contacts.
-2) I am not responsible for any damage you do to your self or your property. Attempt this project at your own risk.
-3) I do not guarantee design compatibility. You may encounter issues with certain games. There is also a chance I have made an error in the design or the BOM - if this is the case, I will do everything I can to address the problem as quickly as possible.
-4) If you are using this board to make games other than for personal use, you must have permission from the originator to use and distribute any ROM images or other related material. You are responsible for making sure you adhere to any license requirements.
+1) <a href="https://github.com/MouseBiteLabs/Super-Nintendo-Cartridges/wiki">Please review the wiki for more information about using the circuit boards, instructions for how to program them, and example builds.</a>
+2) When soldering parts on, it's a good idea to put kapton tape or otherwise cover the bottom cartridge edge. You do not want to get solder on the cartridge contacts.
+3) I am not responsible for any damage you do to your self or your property. Attempt this project at your own risk.
+4) I do not guarantee design compatibility. You may encounter issues with certain games. There is also a chance I have made an error in the design or the BOM - if this is the case, I will do everything I can to address the problem as quickly as possible.
+5) If you are using this board to make games other than for personal use, you must have permission from the originator to use and distribute any ROM images or other related material. You are responsible for making sure you adhere to any license requirements.
 
 DO NOT use my circuit boards for profiting from stolen work - this especially includes homebrew content, ROM hacks, and using fan-made labels without permission from the originator. **Support ALL original creators!**
 
@@ -48,7 +49,7 @@ You can use the zipped folder at any board fabricator you like. You may also buy
 
 ## How to Program
 
-Coming soon.
+<a href="https://github.com/MouseBiteLabs/Super-Nintendo-Cartridges/wiki/Preparing-the-ROM">Please check out the wiki pages on how to prepare the ROM and program the cartridge.</a>
 
 ## Board Configurations
 
@@ -202,16 +203,28 @@ The component groups required for the build you want to make are detailed above.
 
 ## Revision History
 
-### v1.2
+### v1.2 - Release
+
+- Fix C9 and C12 positions on PCB
+- Add actual resistors for jumpers
 
 ### v1.1
 
+- Change reference designators CC1 to CC, CB1 to CB
+- Make silkscreen thicker, pin 1 indicators bigger, add boxes around passives
+- Round the cart edge for easier insertion, add cart edge pin numbers
+- Add pin 1 indicators to switches and U1; move U2-U7 reference designators
+- Change Prog/Play to more descriptive language
+- Add pads for resistors instead of switches
+
 ### v1.0
 
-## Resources and Acknowledgements
+- Prototype version
 
-- sanni
-- nesdev
+## Acknowledgements
+
+- Extremely huge thanks to sanni for firstly creating the OSCR, and secondly for adding programming support for the cartridges.
+- Continual thanks to all in the nesdev community for their resources, design tips, and support throughout the past half-decade.
 
 ## License
 
