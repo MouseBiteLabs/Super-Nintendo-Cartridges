@@ -4,6 +4,8 @@ This is a repository listing all of my Super Nintendo Cartridge board variants. 
 
 Use the following table (or navigate the above folders) for information on each specific baord type. <a href="https://github.com/MouseBiteLabs/Super-Nintendo-Cartridges/wiki">Please also review the wiki for more information.</a>
 
+Note that the boards listed below are planned for development. No dates for upload are guaranteed.
+
 ## SNES Board Variants
 
 | **Board Name**                                                                                                     | **Board Number**   | **Max ROM Size** | **Max RAM Size** | **Mappings Supported**         | **Multicart Support?**            | **Memory Family Used** |
