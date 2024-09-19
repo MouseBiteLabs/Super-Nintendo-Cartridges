@@ -502,7 +502,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "SNES_AdvancedFlash_1-2_GERBERS",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "SNES_AdvancedFlash_1-2.step",

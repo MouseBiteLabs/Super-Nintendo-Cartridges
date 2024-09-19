@@ -6,9 +6,9 @@
 	(paper "A4")
 	(title_block
 		(title "SNES Advanced Flash Cartridge")
-		(date "2024-08-09")
-		(rev "1.1")
-		(company "https://github.com/MouseBiteLabs")
+		(date "2024-09-18")
+		(rev "1.2")
+		(company "https://github.com/MouseBiteLabs/Super-Nintendo-Cartridges")
 	)
 	(lib_symbols
 		(symbol "74xGxx:74AHC1G126"
