@@ -97,6 +97,12 @@ These two sets of switches control the multicart features on the board. You can 
 
 The component groups required for the build you want to make are detailed above. Note that the "optional" groups mostly only contain the switches, as you can manually set the switch position with a 0-ohm resistor (or, lack of a resistor). Remember, shorting the pads means the switch is ON, and keeping the pads depopulated means the switch is OFF.
 
+### Mouser Shopping Cart
+
+The following cart has *all* the parts you would potentially need on one build, plus a few extras of the passive components due to price breaks. This also includes **both the AS6C62256 and AS6C1008.** Remove the chips you don't need from the cart before ordering, according to the component group assignments below.
+
+https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=0fb197c8aa 
+
 ### Group A - 4 MB ROM, No RAM
 
 | Reference | Value/Part Number | Package       | Description      | Source                                           |
