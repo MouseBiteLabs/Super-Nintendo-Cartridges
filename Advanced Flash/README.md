@@ -99,7 +99,7 @@ The component groups required for the build you want to make are detailed above.
 
 ### Mouser Shopping Cart
 
-The following cart has *all* the parts you would potentially need on one build, plus a few extras of the passive components due to price breaks. This also includes **both the AS6C62256 and AS6C1008.** Remove the chips you don't need from the cart before ordering, according to the component group assignments below.
+The following cart has *the maximum amount* of parts you would potentially need on a single board (essentially, a multicart), plus a few extras of the passive components due to price breaks. This also includes **four M29F160 chips and both the AS6C62256 and AS6C1008.** Remove the chips you don't need from the cart before ordering, according to the component group assignments below.
 
 https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=0fb197c8aa 
 
