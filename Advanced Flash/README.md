@@ -33,6 +33,8 @@ The zipped folder contains all the gerber files for this board. The following op
 
 **I sell this blank circuit board on Etsy, so you don't have to buy a bunch of multiples if you don't want to.** (Click the banner!)
 
+(COMING SOON)
+
 <a href="https://mousebitelabs.etsy.com/"><img src="https://github-production-user-asset-6210df.s3.amazonaws.com/97127539/239718536-5c9aefe3-0628-4434-b8d8-55ff80ac3bbc.png" alt="PCB from Etsy" /></a> 
 
 You can use the zipped folder at any board fabricator you like. You may also buy the board from PCBWay using this link (disclosure: I receive 10% of the sale value to go towards future PCB orders of my own):
@@ -78,6 +80,8 @@ This sets the RAM size for the game, assuming you have the RAM chip installed. T
 - For 8 KB of RAM, set positions 1 and 2 ON, and 3 and 4 OFF.
 - For 32 KB of RAM, set all positions ON.
 
+*Note: If you have a v1.1 board, please read the section below, as the instructions are slightly different to set the RAM size correctly.*
+
 ### Switch 3 - Ex Mode
 
 Switch this ON to change the setting on SW1 to ExLoROM/ExHiROM. Switch it OFF to keep SW1 as a LoROM/HiROM switch.
@@ -92,6 +96,30 @@ These two sets of switches control the multicart features on the board. You can 
 - Program the first game with #1 setting, program the second game with #2 setting
   - If you are going to use the map swap feature, make sure game 1 is the LoROM game and game 2 is the HiROM game
 - After both games are programmed, set SW5 to "ENABLE"
+
+## Fix for v1.1
+
+There's a minor issue with v1.1 of the board. For setting the SRAM size using SW2, you must do the following:
+
+- For 2 KB of RAM, set all switches OFF.
+- For 8 KB of RAM, set positions 1 and 2 ON, and 3 and 4 OFF. **REMOVE R8 AND R9 FROM THE BOARD.**
+- For 32 KB of RAM, set all positions ON. **REMOVE R8, R9, R10, AND R11 FROM THE BOARD.**
+
+If you *do not* remove the resistors as defined above, your save battery life will be severely impacted. Speaking of which...
+
+## Estimating Battery Life
+
+To accurately estimate the battery life, you must first solder the battery in, and then either program your game in the OSCR or power it on in a Super Nintendo.
+
+After that, measure the voltage across R1 using a multimeter in DC mV mode, touching the probes to the two test point pads on either side of R1. You should read something around 10 mV or less. If you are severely higher than 10 mV, like in the 100's of mV, then you have a problem on your board. (Do you have v1.1, and did you forget to follow the instructions above?)
+
+Once you have a suitable voltage, find the milliamp-hour rating of your selected battery (preferrably from a datasheet). For example, a Renata CR2032 battery is rated for 225 mAh.
+
+Now to estimate battery life, take the voltage measurement in mV and the battery rating in mAh, and plug it into this equation: 
+
+TIme (years) = Resistance of R1 (ohms) * Battery capacity (mAh) / Voltage (mV) / 8760
+
+The factor of 8760 is for converting years to hours (24 hours in a day, 365 days in a year). The resistance of R1 is 10000 ohms. So for an example, if you measured 10 mV on R1 and are using a Renata CR2032, you would get 10000 * 225 / 10 / 8760 = **25.7 years.**
 
 ## Troubleshooting
 
@@ -217,6 +245,7 @@ https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=0fb197c8aa
 
 - Fix C9 and C12 positions on PCB
 - Add actual resistors for jumpers
+- Change R8 - R11 to pull-down instead of pull-up resistors.
 
 ### v1.1
 
