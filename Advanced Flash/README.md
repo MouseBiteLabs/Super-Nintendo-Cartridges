@@ -152,9 +152,9 @@ https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=0fb197c8aa
 | R4        | 100k              | 0603          | Resistor         | [https://mou.sr/49bgMnu](https://mou.sr/49bgMnu) |
 | R5        | 100k              | 0603          | Resistor         | [https://mou.sr/49bgMnu](https://mou.sr/49bgMnu) |
 | U1        | PIC12F629         | DIP-8, SOIC-8 | Lockout Chip     | [https://mou.sr/3XuEZzO](https://mou.sr/3XuEZzO) |
-| U2        | 74CBTLV3257       | TSSOP-16      | Multiplexer      | [https://mou.sr/3MKJwd1](https://mou.sr/3MKJwd1) |
-| U3        | 74CBTLV3257       | TSSOP-16      | Multiplexer      | [https://mou.sr/3MKJwd1](https://mou.sr/3MKJwd1) |
-| U4        | 74CBTLV3257       | TSSOP-16      | Multiplexer      | [https://mou.sr/3MKJwd1](https://mou.sr/3MKJwd1) |
+| U2        | SN74CBT3257CPWR   | TSSOP-16      | Multiplexer      | [https://mou.sr/3MKJwd1](https://mou.sr/3MKJwd1) |
+| U3        | SN74CBT3257CPWR   | TSSOP-16      | Multiplexer      | [https://mou.sr/3MKJwd1](https://mou.sr/3MKJwd1) |
+| U4        | SN74CBT3257CPWR   | TSSOP-16      | Multiplexer      | [https://mou.sr/3MKJwd1](https://mou.sr/3MKJwd1) |
 | U7        | 74LS139           | TSSOP-16      | Decoder          | [https://mou.sr/4eqzppn](https://mou.sr/4eqzppn) |
 | U8        | M29F160           | TSOP-48       | Flash EEPROM     | [https://mou.sr/3MNWQ0b](https://mou.sr/3MNWQ0b) |
 | U9        | M29F160           | TSOP-48       | Flash EEPROM     | [https://mou.sr/3MNWQ0b](https://mou.sr/3MNWQ0b) |
