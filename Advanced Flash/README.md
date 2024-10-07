@@ -1,4 +1,4 @@
-# Super Nintendo Advanced Flash Cartridge (SNES-8XJ4D-01A) (UNDER CONSTRUCTION)
+# Super Nintendo Advanced Flash Cartridge (SNES-8XJ4D-01A)
 
 # **THIS REPOSITORY IS UNFINISHED AND THE GERBERS ARE UNTESTED!**
 
