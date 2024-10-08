@@ -59,10 +59,10 @@ You can use the zipped folder at any board fabricator you like. You may also buy
 
 You *do not* need every single part on this board to make a game. The game you want to make is mainly dependent on the memory mapping (LoROM, HiROM, etc), the ROM size, and the RAM size. Depending on your needs, you only need to solder on certain components, which you can find below in the BOM section.
 
-- **Every board needs Group A components.** You can make LoRom or HiROM games that have no RAM and are up to 4 MB large with this configuration.
-- If you need RAM space, **add Group B components.** This will add 32 KB of RAM space.
+- **Every board needs Group A components.** You can make LoRom or HiROM games that have no RAM and are up to 4 MB large with this configuration. (If your game is only 2 MB, you do not need to include U9 and C9)
+- If you need RAM space, **add Group B components.** This will add 32 KB of RAM space. (Multicarts will need the AS6C1008 chip for the RAM)
 - If your game is larger than 4 MB, it will use the ExLoROM or ExHiROM memory mapping. **Add Group C components for this.**
-- For multicarts, you can make a board with two games on it up to 4 MB each. You will need Group C components, **as well as Group D components.**
+- For multicarts, you can make a board with two games on it up to 4 MB each. You will need Group C components, **as well as Group D components.** (If one of the two games you want to program is only 2 MB, you do not need to include U9 and C9 for Game 1, and/or U12 and C12 for Game 2.)
 
 ## Switches
 
@@ -72,11 +72,11 @@ For SW1 through SW5, you can either use the DIP switch as indicated in the BOM b
 
 ### Switch 1 - Memory Mapping
 
-This is the LoROM/HiROM switch. Turn it on to enter LoROM mode, or turn it off for HiROM mode.
+This is the LoROM/HiROM switch. Turn it on to enter LoROM mode, or turn it off for HiROM mode, depending on the game you program.
 
 ### Switch 2 - SRAM Size
 
-This sets the RAM size for the game, assuming you have the RAM chip installed. The maximum allocated RAM space *per game* on this board is only 32 KB, even if you put a 128 KB RAM chip (you will need the 128 KB chip for multicarts). Some games will care that you have the correct RAM size, or else they will activate piracy protection, so you should try to match the settings your game calls for. Note that DIP positions 1 and 2, and 3 and 4 should be changed together simultaneously. You shouldn't have to ever move individual switches independently.
+This sets the RAM size for the game, assuming you have the RAM chip installed. The maximum allocated RAM space *per game* on this board is only 32 KB, even if you put a 128 KB RAM chip (you will need the 128 KB chip for multicarts). Some games will care that you have the correct RAM size, or else they will activate piracy protection, so you should try to match the settings your game calls for. Note that DIP positions 1/2, and 3/4 should be changed together simultaneously:
 
 - For 2 KB of RAM, set all switches OFF.
 - For 8 KB of RAM, set positions 1 and 2 ON, and 3 and 4 OFF.
@@ -92,16 +92,22 @@ Switch this ON to change the setting on SW1 to ExLoROM/ExHiROM. Switch it OFF to
 
 These two sets of switches control the multicart features on the board. You can make two LoROM games, two HiROM games, or one LoROM game and one HiROM game if you set the "Map Swap" switch to "YES". Here is how to use the switches to program the two games:
 
-- First, set SW5 to "DISABLE"
-- Map Swap can be either setting during programming mode, so just put it in the position you want it for actual gameplay
-- If you are programming two of the same memory map types, put SW1 into the desired memory map mode (SW1 position does not matter if you are using the map swap feature)
-- Program the first game with #1 setting, program the second game with #2 setting
-  - If you are going to use the map swap feature, make sure game 1 is the LoROM game and game 2 is the HiROM game
-- After both games are programmed, set SW5 to "ENABLE"
+- Set SW4B (MULTI MODE) to "PRG" (for programming)
+- Put SW5A (MAP SWAP) in the mode you want to use:
+  - YES = Game 1 is LoROM, Game 2 is HiROM
+  - NO = Game 1 and Game 2 are both LoROM or HiROM depending on SW1 position
+  - If you are programming two of the same memory map types, put SW1 into the desired memory map mode (SW1 position does not matter if you are using the map swap feature)
+- Program the first game by putting SW5 in "GAME 1" position; program the second by putting SW5 in "GAME 2" position
+  - If you are going to use the map swap feature, make sure game 1 is the LoROM game and game 2 is the HiROM game!
+- After both games are programmed, set SW4B to "PLAY"
+
+Note that if you keep SW4B in "PRG" mode, the game that boots up will be determined by the position of SW5.
 
 ## Fix for v1.1
 
-There's a minor issue with v1.1 of the board. For setting the SRAM size using SW2, you must do the following:
+There's a minor issue with v1.1 of the board. **This does not affect versions after v1.1.** 
+
+For setting the SRAM size using SW2, you must do the following:
 
 - For 2 KB of RAM, set all switches OFF.
 - For 8 KB of RAM, set positions 1 and 2 ON, and 3 and 4 OFF. **REMOVE R8 AND R9 FROM THE BOARD.**
@@ -119,7 +125,7 @@ Once you have a suitable voltage, find the milliamp-hour rating of your selected
 
 Now to estimate battery life, take the voltage measurement in mV and the battery rating in mAh, and plug it into this equation: 
 
-TIme (years) = Resistance of R1 (ohms) * Battery capacity (mAh) / Voltage (mV) / 8760
+Time (years) = Resistance of R1 (ohms) * Battery capacity (mAh) / Voltage (mV) / 8760
 
 The factor of 8760 is for converting years to hours (24 hours in a day, 365 days in a year). The resistance of R1 is 10000 ohms. So for an example, if you measured 10 mV on R1 and are using a Renata CR2032, you would get 10000 * 225 / 10 / 8760 = **25.7 years.**
 
@@ -133,11 +139,13 @@ The component groups required for the build you want to make are detailed above.
 
 ### Mouser Shopping Cart
 
-The following cart has *the maximum amount* of parts you would potentially need on a single board (essentially, a multicart), plus a few extras of the passive components due to price breaks. This also includes **four M29F160 chips and both the AS6C62256 and AS6C1008.** Remove the chips you don't need from the cart before ordering, according to the component group assignments below.
+The following cart has *the maximum amount* of parts you would potentially need on a single board (essentially, a multicart), plus a few extras of the passive components due to price breaks. This also includes **four M29F160 chips and both the AS6C62256 and AS6C1008.** You can remove the chips you don't need from the shopping cart before ordering, according to the component group assignments below.
 
 https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=0fb197c8aa 
 
 ### Group A - 4 MB ROM, No RAM
+
+Note: If your game is only 2 MB, you do not need U9 and C9.
 
 | Reference | Value/Part Number | Package       | Description      | Source                                           |
 | --------- | ----------------- | ------------- | ---------------- | ------------------------------------------------ |
@@ -152,7 +160,7 @@ https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=0fb197c8aa
 | R2        | 100k              | 0603          | Resistor         | [https://mou.sr/49bgMnu](https://mou.sr/49bgMnu) |
 | R3        | 10k               | 0603          | Resistor         | [https://mou.sr/3riR7IH](https://mou.sr/3riR7IH) |
 | R4        | 100k              | 0603          | Resistor         | [https://mou.sr/49bgMnu](https://mou.sr/49bgMnu) |
-| R5        | 100k              | 0603          | Resistor         | [https://mou.sr/49bgMnu](https://mou.sr/49bgMnu) |
+| R5        | 10k               | 0603          | Resistor         | [https://mou.sr/3riR7IH](https://mou.sr/3riR7IH) |
 | U1        | PIC12F629         | DIP-8, SOIC-8 | Lockout Chip     | [https://mou.sr/3XuEZzO](https://mou.sr/3XuEZzO) |
 | U2        | SN74CBT3257CPWR   | TSSOP-16      | Multiplexer      | [https://mou.sr/3MKJwd1](https://mou.sr/3MKJwd1) |
 | U3        | SN74CBT3257CPWR   | TSSOP-16      | Multiplexer      | [https://mou.sr/3MKJwd1](https://mou.sr/3MKJwd1) |
@@ -163,15 +171,17 @@ https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=0fb197c8aa
 
 ### Group A (Optional) - Programming header, Lo/Hi switch/jumper
 
+Note: J1 is a space that allows you to program the PIC using the standard ISP pinout while the chip is on-board. It is not a required component. If you wish to use it, you will need to pick out a component yourself to use here, as there are different ways to go about using it.
+
 | Reference | Value/Part Number   | Package                  | Description        | Source                                           |
 | --------- | ------------------- | ------------------------ | ------------------ | ------------------------------------------------ |
 | J1        | \--                 | 2x3 pins, 2.54mm spacing | Header (see note)  | N/A                                              |
 | RS1       | 0 ohm               | 0603                     | Resistor (Jumper)  | [https://mou.sr/4e1ABQg](https://mou.sr/4e1ABQg) |
 | SW1       | DS04-254-2-01BK-SMT | 1-position DIP           | DIP Switch (1-pos) | [https://mou.sr/3MK4Lvz](https://mou.sr/3MK4Lvz) |
 
-*Note: J1 is a space that allows you to program the PIC using the standard ISP pinout while the chip is on-board. It is not a required component. If you wish to use it, you will need to pick out a component yourself to use here, as there are different ways to go about using it.
-
 ### Group B - adds 32 KB of RAM
+
+Note: If you are making a multicart, you must use the AS6C1008 for U10.
 
 | Reference | Value/Part Number   | Package        | Description        | Source                                           |
 | --------- | ------------------- | -------------- | ------------------ | ------------------------------------------------ |
@@ -205,6 +215,8 @@ https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=0fb197c8aa
 
 ### Group C - Adds 4 MB ROM for ExLoROM and ExHiROM
 
+Note: If your Ex-mode game is 6 MB large, you don't need U13 and C13.
+
 | Reference | Value/Part Number | Package | Description      | Source                                           |
 | --------- | ----------------- | ------- | ---------------- | ------------------------------------------------ |
 | C12       | 0.1u              | 0603    | Capacitor (MLCC) | [https://mou.sr/3ENc15O](https://mou.sr/3ENc15O) |
@@ -221,14 +233,13 @@ https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=0fb197c8aa
 
 ### Group D - Enables multicart mode
 
+Note: If your game(s) are 2 MB, you do not need U9 and C9 (for Game 1) and/or U12 and C12 (for Game 2).
+
 | Reference | Value/Part Number | Package   | Description      | Source                                           |
 | --------- | ----------------- | --------- | ---------------- | ------------------------------------------------ |
 | C14       | 0.1u              | 0603      | Capacitor (MLCC) | [https://mou.sr/3ENc15O](https://mou.sr/3ENc15O) |
-| C15       | 0.1u              | 0603      | Capacitor (MLCC) | [https://mou.sr/3ENc15O](https://mou.sr/3ENc15O) |
-| R12       | 100k              | 0603      | Resistor         | [https://mou.sr/49bgMnu](https://mou.sr/49bgMnu) |
-| R13       | 10k               | 0603      | Resistor         | [https://mou.sr/3riR7IH](https://mou.sr/3riR7IH) |
+| R13       | 1k                | 0603      | Resistor         |  |
 | U14       | 74HC74            | TSSOP-14  | Flip-Flop        | [https://mou.sr/4eroZpu](https://mou.sr/4eroZpu) |
-| U15       | 74AHC1G126        | SOT-353-5 | Tri-State Buffer | [https://mou.sr/3T9Zdim](https://mou.sr/3T9Zdim) |
 
 ### Group D (Optional) - Multicart mode switches/jumpers
 
@@ -236,18 +247,19 @@ https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=0fb197c8aa
 | --------- | ------------------- | -------------- | ------------------ | ------------------------------------------------ |
 | RS4A      | 0 ohm               | 0603           | Resistor (Jumper)  | [https://mou.sr/4e1ABQg](https://mou.sr/4e1ABQg) |
 | RS4B      | 0 ohm               | 0603           | Resistor (Jumper)  | [https://mou.sr/4e1ABQg](https://mou.sr/4e1ABQg) |
-| RS5A      | 0 ohm               | 0603           | Resistor (Jumper)  | [https://mou.sr/4e1ABQg](https://mou.sr/4e1ABQg) |
-| RS5B      | 0 ohm               | 0603           | Resistor (Jumper)  | [https://mou.sr/4e1ABQg](https://mou.sr/4e1ABQg) |
+| RS5       | 0 ohm               | 0603           | Resistor (Jumper)  | [https://mou.sr/4e1ABQg](https://mou.sr/4e1ABQg) |
 | SW4       | DS04-254-2-02BK-SMT | 2-position DIP | DIP Switch (2-pos) | [https://mou.sr/3B7BqZr](https://mou.sr/3B7BqZr) |
-| SW5       | DS04-254-2-02BK-SMT | 2-position DIP | DIP Switch (2-pos) | [https://mou.sr/3B7BqZr](https://mou.sr/3B7BqZr) |
+| SW5       | DS04-254-2-01BK-SMT | 1-position DIP | DIP Switch (1-pos) | [https://mou.sr/3MK4Lvz](https://mou.sr/3MK4Lvz) |
 
 ## Revision History
 
 ### v1.2 - Release
 
-- Fix C9 and C12 positions on PCB
-- Add actual resistors for jumpers
-- Change R8 - R11 to pull-down instead of pull-up resistors.
+- Fixed C9 and C12 positions on PCB
+- Added resistors under all switches as alternative
+- Changed R8 through R11 to pull-down resistors
+- Added Q1 to ensure RAM start-up at correct time
+- Simplified multicart circuit to reduce battery current draw, lower the BOM count/cost and simplify the design
 
 ### v1.1
 
