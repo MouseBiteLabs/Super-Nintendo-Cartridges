@@ -93,7 +93,7 @@ Switch this ON to change the setting on SW1 to ExLoROM/ExHiROM. Switch it OFF to
 These two sets of switches control the multicart features on the board. You can make two LoROM games, two HiROM games, or one LoROM game and one HiROM game if you set the "Map Swap" switch to "YES". Here is how to use the switches to program the two games:
 
 - Set SW4B (MULTI MODE) to "PRG" (for programming)
-- Put SW5A (MAP SWAP) in the mode you want to use:
+- Put SW4A (MAP SWAP) in the mode you want to use:
   - YES = Game 1 is LoROM, Game 2 is HiROM
   - NO = Game 1 and Game 2 are both LoROM or HiROM depending on SW1 position
   - If you are programming two of the same memory map types, put SW1 into the desired memory map mode (SW1 position does not matter if you are using the map swap feature)
