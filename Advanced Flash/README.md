@@ -4,7 +4,7 @@
 
 This is a new and improved Super Nintendo cartridge circuit board design that is capable of being flashed via the <a href="https://github.com/sanni/cartreader">Open Source Cart Reader (OSCR) by sanni</a>. Alternatively, you can also flash the ROM chips before soldering them to the board through the use of a programmer like the <a href="https://xgecu.myshopify.com/products/xgecu-new-t48-tl866-3gprogrammer-v12-01-support-28000-ics-for-spi-nor-nand-flash-emmc-bga153-162-169-100-221-tsop-sop-plcc">T48 programmer</a> with the <a href="https://xgecu.myshopify.com/products/100-original-xgecu-adp_f48_ex-1-tsop48-special-adapter-for-nor-flash-only-use-on-t48-tl866-3g-programmer">TSOP48 adapter</a>. This cartridge is made entirely from **brand new off the shelf components.** No donors are required, and you don't need to rely on AliExpress or eBay for parts!
 
-![image](https://github.com/user-attachments/assets/80808ef6-8287-4d5b-932e-dab7ef5ffa02)
+![image](https://github.com/user-attachments/assets/cba9c11b-9970-4ec6-a183-312bec8bb5bb)
 
 This cartridge covers over 95% of the entire SNES library, capable of any standard cartridge **but not those with co-processors, such as SA-1 or SuperFX.** You can backup games onto it with the following settings:
 - All memory maps supported: LoROM, HiROM, ExLoROM, and ExHiROM
@@ -119,7 +119,7 @@ If you *do not* remove the resistors as defined above, your save battery life wi
 
 To accurately estimate the battery life, you must first solder the battery in, and then either program your game in the OSCR or power it on in a Super Nintendo.
 
-After that, measure the voltage across R1 using a multimeter in DC mV mode, touching the probes to the two test point pads on either side of R1. You should read something around 10 mV or less. If you are severely higher than 10 mV, like in the 100's of mV, then you have a problem on your board. (Do you have v1.1, and did you forget to follow the instructions above?)
+After that, measure the voltage across R1 using a multimeter in DC mV mode, touching the probes to the two test point pads on either side of R1. You should read something around 10 mV or less. If you are severely higher than 10 mV, like in the 100's of mV, then you have a problem on your board.
 
 Once you have a suitable voltage, find the milliamp-hour rating of your selected battery (preferrably from a datasheet). For example, a Renata CR2032 battery is rated for 225 mAh.
 
@@ -141,7 +141,7 @@ The component groups required for the build you want to make are detailed above.
 
 The following cart has *the maximum amount* of parts you would potentially need on a single board (essentially, a multicart), plus a few extras of the passive components due to price breaks. This also includes **four M29F160 chips and both the AS6C62256 and AS6C1008.** You can remove the chips you don't need from the shopping cart before ordering, according to the component group assignments below.
 
-https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=0fb197c8aa 
+https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=f8afa5ad01
 
 ### Group A - 4 MB ROM, No RAM
 
@@ -193,7 +193,7 @@ Note: If you are making a multicart, you must use the AS6C1008 for U10.
 | CB        | 22u                 | 1206           | Capacitor (MLCC)   | [https://mou.sr/4e4zShm](https://mou.sr/4e4zShm) |
 | R1        | 10k                 | 0603           | Resistor           | [https://mou.sr/3riR7IH](https://mou.sr/3riR7IH) |
 | R6        | 130k                | 0603           | Resistor           | [https://mou.sr/3MjXliy](https://mou.sr/3MjXliy) |
-| R7        | 49.9k               | 0603           | Resistor           | [https://mou.sr/3Q3NRZO](https://mou.sr/3Q3NRZO) |
+| R7        | 49.9k               | 0603           | Resistor           | [https://mou.sr/3BBcDgp](https://mou.sr/3BBcDgp) |
 | R8        | 100k                | 0603           | Resistor           | [https://mou.sr/49bgMnu](https://mou.sr/49bgMnu) |
 | R9        | 100k                | 0603           | Resistor           | [https://mou.sr/49bgMnu](https://mou.sr/49bgMnu) |
 | R10       | 100k                | 0603           | Resistor           | [https://mou.sr/49bgMnu](https://mou.sr/49bgMnu) |
@@ -238,7 +238,7 @@ Note: If your game(s) are 2 MB, you do not need U9 and C9 (for Game 1) and/or U1
 | Reference | Value/Part Number | Package   | Description      | Source                                           |
 | --------- | ----------------- | --------- | ---------------- | ------------------------------------------------ |
 | C14       | 0.1u              | 0603      | Capacitor (MLCC) | [https://mou.sr/3ENc15O](https://mou.sr/3ENc15O) |
-| R13       | 1k                | 0603      | Resistor         |  |
+| R13       | 1k                | 0603      | Resistor         | [https://mou.sr/3U0EvS4](https://mou.sr/3U0EvS4) |
 | U14       | 74HC74            | TSSOP-14  | Flip-Flop        | [https://mou.sr/4eroZpu](https://mou.sr/4eroZpu) |
 
 ### Group D (Optional) - Multicart mode switches/jumpers
