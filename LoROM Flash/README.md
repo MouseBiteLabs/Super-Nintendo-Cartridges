@@ -159,7 +159,7 @@ Note: If your game is only 2 MB, you do not need U9 and C9.
 | R4        | 100k              | 0603          | Resistor         | [https://mou.sr/49bgMnu](https://mou.sr/49bgMnu) |
 | R5        | 100k              | 0603          | Resistor         | [https://mou.sr/49bgMnu](https://mou.sr/49bgMnu) |
 | U1        | PIC12F629         | DIP-8, SOIC-8 | Lockout Chip     | [https://mou.sr/3XuEZzO](https://mou.sr/3XuEZzO) |
-| U7        | 74LS139           | TSSOP-16      | Decoder          | [https://mou.sr/4eqzppn](https://mou.sr/4eqzppn) |
+| U7        | 74HCT139          | TSSOP-16      | Decoder          | [https://mou.sr/4eqzppn](https://mou.sr/4eqzppn) |
 | U8        | M29F160           | TSOP-48       | Flash EEPROM     | [https://mou.sr/3MNWQ0b](https://mou.sr/3MNWQ0b) |
 | U9        | M29F160           | TSOP-48       | Flash EEPROM     | [https://mou.sr/3MNWQ0b](https://mou.sr/3MNWQ0b) |
 
@@ -194,8 +194,8 @@ Note 2: If you are using an AS6C62256, you can omit R14 and R15.
 | R11       | 100k                | 0603           | Resistor           | [https://mou.sr/49bgMnu](https://mou.sr/49bgMnu) |
 | R14       | 100k                | 0603           | Resistor           | [https://mou.sr/49bgMnu](https://mou.sr/49bgMnu) |
 | R15       | 100k                | 0603           | Resistor           | [https://mou.sr/49bgMnu](https://mou.sr/49bgMnu) |
-| U5        | 74LS139             | TSSOP-16       | Decoder            | [https://mou.sr/4eqzppn](https://mou.sr/4eqzppn) |
-| U6        | 74LS139             | TSSOP-16       | Decoder            | [https://mou.sr/4eqzppn](https://mou.sr/4eqzppn) |
+| U5        | 74HCT139            | TSSOP-16       | Decoder            | [https://mou.sr/4eqzppn](https://mou.sr/4eqzppn) |
+| U6        | 74HCT139            | TSSOP-16       | Decoder            | [https://mou.sr/4eqzppn](https://mou.sr/4eqzppn) |
 | U10       | AS6C62256, AS6C1008 | SOP-28, SOP-32 | SRAM               | [https://mou.sr/3ZxG6jd](https://mou.sr/3ZxG6jd) |
 | U11       | TPS3613             | MSOP-10        | Battery Management | [https://mou.sr/45Ir2kh](https://mou.sr/45Ir2kh) |
 
@@ -235,7 +235,7 @@ Note: If your game(s) are 2 MB, you do not need U9 and C9 (for Game 1) and/or U1
 | --------- | ----------------- | --------- | ---------------- | ------------------------------------------------ |
 | C14       | 0.1u              | 0603      | Capacitor (MLCC) | [https://mou.sr/3ENc15O](https://mou.sr/3ENc15O) |
 | R13       | 10k               | 0603      | Resistor         | [https://mou.sr/3riR7IH](https://mou.sr/3riR7IH) |
-| U14       | 74HC74            | TSSOP-14  | Flip-Flop        | [https://mou.sr/4eroZpu](https://mou.sr/4eroZpu) |
+| U14       | 74HCT74           | TSSOP-14  | Flip-Flop        | [https://mou.sr/4eroZpu](https://mou.sr/4eroZpu) |
 
 ### Group D (Optional) - Multicart mode switches/jumpers
 
