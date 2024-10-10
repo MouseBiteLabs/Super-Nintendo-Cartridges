@@ -191,6 +191,7 @@ Note: If you are making a multicart, you must use the AS6C1008 for U10.
 | C10       | 0.1u                | 0603           | Capacitor (MLCC)   | [https://mou.sr/3ENc15O](https://mou.sr/3ENc15O) |
 | C11       | 0.1u                | 0603           | Capacitor (MLCC)   | [https://mou.sr/3ENc15O](https://mou.sr/3ENc15O) |
 | CB        | 22u                 | 1206           | Capacitor (MLCC)   | [https://mou.sr/4e4zShm](https://mou.sr/4e4zShm) |
+| Q1        | 2N7002              | SOT-23         | N-channel MOSFET   | [https://mou.sr/3rgfh6J](https://mou.sr/3rgfh6J) |
 | R1        | 10k                 | 0603           | Resistor           | [https://mou.sr/3riR7IH](https://mou.sr/3riR7IH) |
 | R6        | 130k                | 0603           | Resistor           | [https://mou.sr/3MjXliy](https://mou.sr/3MjXliy) |
 | R7        | 49.9k               | 0603           | Resistor           | [https://mou.sr/3BBcDgp](https://mou.sr/3BBcDgp) |
