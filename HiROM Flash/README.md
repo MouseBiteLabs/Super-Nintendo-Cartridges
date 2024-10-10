@@ -1,4 +1,4 @@
-# Super Nintendo Advanced Flash Cartridge - HiROM (SHVC-8XH8S-01A)
+# Super Nintendo Advanced Flash Cartridge - HiROM (SHVC-8XH8D-01A)
 
 # **THIS REPOSITORY IS UNFINISHED AND THE GERBERS ARE UNTESTED!**
 
