@@ -6,7 +6,7 @@ This is a new and improved Super Nintendo cartridge circuit board design that is
 
 This is the **HiROM-only variant** of the <a href="https://github.com/MouseBiteLabs/Super-Nintendo-Cartridges">Advanced Flash cartridge</a>.
 
-![image](https://github.com/user-attachments/assets/cba9c11b-9970-4ec6-a183-312bec8bb5bb)
+![image](https://github.com/user-attachments/assets/bbdc6acc-346e-4472-85ee-d94f95b0653f)
 
 This cartridge is capable of any standard cartridge with the HiROM or ExHiROM mapping **but not those with co-processors, such as SA-1 or SuperFX.** You can backup games onto it with the following settings:
 - Can be programmed to operate as a multicart, changing games by pressing the SNES reset button (this includes the ability to make two games of the same memory map, or one of each)
@@ -58,7 +58,7 @@ You can use the zipped folder at any board fabricator you like. You may also buy
 
 ## Board Configurations
 
-You *do not* need every single part on this board to make a game. The game you want to make is mainly dependent on the memory mapping (LoROM, HiROM, etc), the ROM size, and the RAM size. Depending on your needs, you only need to solder on certain components, which you can find below in the BOM section.
+You *do not* need every single part on this board to make a game. The game you want to make is mainly dependent on the ROM size and the RAM size. Depending on your needs, you only need to solder on certain components, which you can find below in the BOM section.
 
 - **Every board needs Group A components.** You can make HiROM games that have no RAM and are up to 4 MB large with this configuration. (If your game is only 2 MB, you do not need to include U9 and C9)
 - If you need RAM space, **add Group B components.** This will add 32 KB of RAM space. (Multicarts will need the AS6C1008 chip for the RAM)
@@ -68,7 +68,7 @@ You *do not* need every single part on this board to make a game. The game you w
 
 ## Switches
 
-For SW1 through SW5, you can either use the DIP switch as indicated in the BOM below (in the "Optional" sections), or you can jumper the pads underneath the switch to turn the switch "ON". In this example, positions 1 and 2 are "ON"; 3 and 4 are "OFF":
+For SW2 through SW6, you can either use the DIP switch as indicated in the BOM below (in the "Optional" sections), or you can jumper the pads underneath the switch to turn the switch "ON". In this example, positions 1 and 2 are "ON"; 3 and 4 are "OFF":
 
 ![image](https://github.com/user-attachments/assets/ef28e52b-cb4e-4246-bc94-9d3e4eb2fbbe)
 
@@ -80,7 +80,7 @@ This sets the RAM size for the game, assuming you have the RAM chip installed. T
 - For 8 KB of RAM, set positions 1 and 2 ON, and 3 and 4 OFF.
 - For 32 KB of RAM, set all positions ON.
 
-*Note: If you have a v1.1 board, please read the section below, as the instructions are slightly different to set the RAM size correctly.*
+*Note: If you have a v1.0 board, please read the section below, as the instructions are slightly different to set the RAM size correctly.*
 
 ### Switch 6 - SRAM Size (for single games with RAM larger than 32 KB)
 
@@ -141,7 +141,7 @@ The component groups required for the build you want to make are detailed above.
 
 The following cart has *the maximum amount* of parts you would potentially need on a single board (essentially, a multicart), plus a few extras of the passive components due to price breaks. This also includes **four M29F160 chips and both the AS6C62256 and AS6C1008.** You can remove the chips you don't need from the shopping cart before ordering, according to the component group assignments below.
 
-https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=f8afa5ad01
+MOUSER LINK
 
 ### Group A - 4 MB ROM, No RAM
 
@@ -169,19 +169,18 @@ Note: If your game is only 2 MB, you do not need U9 and C9.
 | U8        | M29F160           | TSOP-48       | Flash EEPROM     | [https://mou.sr/3MNWQ0b](https://mou.sr/3MNWQ0b) |
 | U9        | M29F160           | TSOP-48       | Flash EEPROM     | [https://mou.sr/3MNWQ0b](https://mou.sr/3MNWQ0b) |
 
-### Group A (Optional) - Programming header, Lo/Hi switch/jumper
+### Group A (Optional) - Programming header
 
 Note: J1 is a space that allows you to program the PIC using the standard ISP pinout while the chip is on-board. It is not a required component. If you wish to use it, you will need to pick out a component yourself to use here, as there are different ways to go about using it.
 
 | Reference | Value/Part Number   | Package                  | Description        | Source                                           |
 | --------- | ------------------- | ------------------------ | ------------------ | ------------------------------------------------ |
 | J1        | \--                 | 2x3 pins, 2.54mm spacing | Header (see note)  | N/A                                              |
-| RS1       | 0 ohm               | 0603                     | Resistor (Jumper)  | [https://mou.sr/4e1ABQg](https://mou.sr/4e1ABQg) |
-| SW1       | DS04-254-2-01BK-SMT | 1-position DIP           | DIP Switch (1-pos) | [https://mou.sr/3MK4Lvz](https://mou.sr/3MK4Lvz) |
 
 ### Group B - adds 32 KB of RAM
 
-Note: If you are making a multicart, you must use the AS6C1008 for U10.
+Note 1: If you are making a multicart, you must use the AS6C1008 for U10.
+Note 2: If you are using an AS6C62256, you can omit R14 and R15.
 
 | Reference | Value/Part Number   | Package        | Description        | Source                                           |
 | --------- | ------------------- | -------------- | ------------------ | ------------------------------------------------ |
@@ -198,6 +197,8 @@ Note: If you are making a multicart, you must use the AS6C1008 for U10.
 | R9        | 100k                | 0603           | Resistor           | [https://mou.sr/49bgMnu](https://mou.sr/49bgMnu) |
 | R10       | 100k                | 0603           | Resistor           | [https://mou.sr/49bgMnu](https://mou.sr/49bgMnu) |
 | R11       | 100k                | 0603           | Resistor           | [https://mou.sr/49bgMnu](https://mou.sr/49bgMnu) |
+| R14       | 100k                | 0603           | Resistor           | [https://mou.sr/49bgMnu](https://mou.sr/49bgMnu) |
+| R15       | 100k                | 0603           | Resistor           | [https://mou.sr/49bgMnu](https://mou.sr/49bgMnu) |
 | U5        | 74LS139             | TSSOP-16       | Decoder            | [https://mou.sr/4eqzppn](https://mou.sr/4eqzppn) |
 | U6        | 74LS139             | TSSOP-16       | Decoder            | [https://mou.sr/4eqzppn](https://mou.sr/4eqzppn) |
 | U10       | AS6C62256, AS6C1008 | SOP-28, SOP-32 | SRAM               | [https://mou.sr/3ZxG6jd](https://mou.sr/3ZxG6jd) |
@@ -213,7 +214,7 @@ Note: If you are making a multicart, you must use the AS6C1008 for U10.
 | RS2D      | 0 ohm               | 0603           | Resistor (Jumper)  | [https://mou.sr/4e1ABQg](https://mou.sr/4e1ABQg) |
 | SW2       | DS04-254-2-04BK-SMT | 4-position DIP | DIP Switch (4-pos) | [https://mou.sr/3MPsI4o](https://mou.sr/3MPsI4o) |
 
-### Group C - Adds 4 MB ROM for ExLoROM and ExHiROM
+### Group C - Adds 4 MB ROM for ExHiROM
 
 Note: If your Ex-mode game is 6 MB large, you don't need U13 and C13.
 
@@ -251,24 +252,24 @@ Note: If your game(s) are 2 MB, you do not need U9 and C9 (for Game 1) and/or U1
 | SW4       | DS04-254-2-02BK-SMT | 2-position DIP | DIP Switch (2-pos) | [https://mou.sr/3B7BqZr](https://mou.sr/3B7BqZr) |
 | SW5       | DS04-254-2-01BK-SMT | 1-position DIP | DIP Switch (1-pos) | [https://mou.sr/3MK4Lvz](https://mou.sr/3MK4Lvz) |
 
-## Revision History (UPDATE)
+### Group E (Optional) - Increases RAM to 128 KB
 
-### v1.2 - Release
+| Reference | Value/Part Number   | Package        | Description        | Source                                           |
+| --------- | ------------------- | -------------- | ------------------ | ------------------------------------------------ |
+| RS6A      | 0 ohm               | 0603           | Resistor (Jumper)  | [https://mou.sr/4e1ABQg](https://mou.sr/4e1ABQg) |
+| RS6B      | 0 ohm               | 0603           | Resistor (Jumper)  | [https://mou.sr/4e1ABQg](https://mou.sr/4e1ABQg) |
+| SW6       | DS04-254-2-02BK-SMT | 2-position DIP | DIP Switch (2-pos) | [https://mou.sr/3B7BqZr](https://mou.sr/3B7BqZr) |
+
+## Revision History
+
+### v1.1 - Release
 
 - Fixed C9 and C12 positions on PCB
 - Added resistors under all switches as alternative
-- Changed R8 through R11 to pull-down resistors
+- Changed R8 through R11 and R14/R15 to pull-down resistors
 - Added Q1 to ensure RAM start-up at correct time
 - Simplified multicart circuit to reduce battery current draw, lower the BOM count/cost and simplify the design
-
-### v1.1
-
-- Change reference designators CC1 to CC, CB1 to CB
-- Make silkscreen thicker, pin 1 indicators bigger, add boxes around passives
-- Round the cart edge for easier insertion, add cart edge pin numbers
-- Add pin 1 indicators to switches and U1; move U2-U7 reference designators
-- Change Prog/Play to more descriptive language
-- Add pads for resistors instead of switches
+- Change board outline to differentiate board from other similar boards
 
 ### v1.0
 
