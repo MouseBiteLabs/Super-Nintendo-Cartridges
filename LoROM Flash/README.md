@@ -88,7 +88,7 @@ SW6 is pretty self-explanatory, and only usable for non-multicarts. It's only re
 
 ### Switch 3 - Ex Mode
 
-Switch this ON for the ExHiROM mapping, or OFF for regular HiROM. (The ExHiROM mode on this board includes both the "true" ExHiROM mapping as well as HiROM games that just have more than 4 MB of ROM space.)
+Switch this ON for the ExLoROM mapping, or OFF for regular LoROM.
 
 ### Switch 4 and 5 - Multicart Configurations
 
