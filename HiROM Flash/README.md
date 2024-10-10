@@ -257,6 +257,10 @@ Note: If your game(s) are 2 MB, you do not need U9 and C9 (for Game 1) and/or U1
 
 ## Revision History
 
+### v1.2 - Hotfix
+
+- Fix board number on top right corner
+
 ### v1.1 - Release
 
 - Fixed C9 and C12 positions on PCB
