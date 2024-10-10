@@ -150,9 +150,6 @@ Note: If your game is only 2 MB, you do not need U9 and C9.
 | Reference | Value/Part Number | Package       | Description      | Source                                           |
 | --------- | ----------------- | ------------- | ---------------- | ------------------------------------------------ |
 | C1        | 0.1u              | 0603          | Capacitor (MLCC) | [https://mou.sr/3ENc15O](https://mou.sr/3ENc15O) |
-| C2        | 0.1u              | 0603          | Capacitor (MLCC) | [https://mou.sr/3ENc15O](https://mou.sr/3ENc15O) |
-| C3        | 0.1u              | 0603          | Capacitor (MLCC) | [https://mou.sr/3ENc15O](https://mou.sr/3ENc15O) |
-| C4        | 0.1u              | 0603          | Capacitor (MLCC) | [https://mou.sr/3ENc15O](https://mou.sr/3ENc15O) |
 | C7        | 0.1u              | 0603          | Capacitor (MLCC) | [https://mou.sr/3ENc15O](https://mou.sr/3ENc15O) |
 | C8        | 0.1u              | 0603          | Capacitor (MLCC) | [https://mou.sr/3ENc15O](https://mou.sr/3ENc15O) |
 | C9        | 0.1u              | 0603          | Capacitor (MLCC) | [https://mou.sr/3ENc15O](https://mou.sr/3ENc15O) |
@@ -160,11 +157,8 @@ Note: If your game is only 2 MB, you do not need U9 and C9.
 | R2        | 100k              | 0603          | Resistor         | [https://mou.sr/49bgMnu](https://mou.sr/49bgMnu) |
 | R3        | 10k               | 0603          | Resistor         | [https://mou.sr/3riR7IH](https://mou.sr/3riR7IH) |
 | R4        | 100k              | 0603          | Resistor         | [https://mou.sr/49bgMnu](https://mou.sr/49bgMnu) |
-| R5        | 10k               | 0603          | Resistor         | [https://mou.sr/3riR7IH](https://mou.sr/3riR7IH) |
+| R5        | 100k              | 0603          | Resistor         | [https://mou.sr/49bgMnu](https://mou.sr/49bgMnu) |
 | U1        | PIC12F629         | DIP-8, SOIC-8 | Lockout Chip     | [https://mou.sr/3XuEZzO](https://mou.sr/3XuEZzO) |
-| U2        | SN74CBT3257CPWR   | TSSOP-16      | Multiplexer      | [https://mou.sr/3MKJwd1](https://mou.sr/3MKJwd1) |
-| U3        | SN74CBT3257CPWR   | TSSOP-16      | Multiplexer      | [https://mou.sr/3MKJwd1](https://mou.sr/3MKJwd1) |
-| U4        | SN74CBT3257CPWR   | TSSOP-16      | Multiplexer      | [https://mou.sr/3MKJwd1](https://mou.sr/3MKJwd1) |
 | U7        | 74LS139           | TSSOP-16      | Decoder          | [https://mou.sr/4eqzppn](https://mou.sr/4eqzppn) |
 | U8        | M29F160           | TSOP-48       | Flash EEPROM     | [https://mou.sr/3MNWQ0b](https://mou.sr/3MNWQ0b) |
 | U9        | M29F160           | TSOP-48       | Flash EEPROM     | [https://mou.sr/3MNWQ0b](https://mou.sr/3MNWQ0b) |
@@ -187,10 +181,10 @@ Note 2: If you are using an AS6C62256, you can omit R14 and R15.
 | --------- | ------------------- | -------------- | ------------------ | ------------------------------------------------ |
 | B1        | CR2032              | CR2032         | Coin Cell Battery  | [https://mou.sr/3QhcXXc](https://mou.sr/3QhcXXc) |
 | C5        | 0.1u                | 0603           | Capacitor (MLCC)   | [https://mou.sr/3ENc15O](https://mou.sr/3ENc15O) |
-| C6        | 0.1u                | 0603           | Capacitor (MLCC)   | [https://mou.sr/3ENc15O](https://mou.sr/3ENc15O) |
 | C10       | 0.1u                | 0603           | Capacitor (MLCC)   | [https://mou.sr/3ENc15O](https://mou.sr/3ENc15O) |
 | C11       | 0.1u                | 0603           | Capacitor (MLCC)   | [https://mou.sr/3ENc15O](https://mou.sr/3ENc15O) |
 | CB        | 22u                 | 1206           | Capacitor (MLCC)   | [https://mou.sr/4e4zShm](https://mou.sr/4e4zShm) |
+| Q1        | 2N7002              | SOT-23         | N-channel MOSFET   | [https://mou.sr/3rgfh6J](https://mou.sr/3rgfh6J) |
 | R1        | 10k                 | 0603           | Resistor           | [https://mou.sr/3riR7IH](https://mou.sr/3riR7IH) |
 | R6        | 130k                | 0603           | Resistor           | [https://mou.sr/3MjXliy](https://mou.sr/3MjXliy) |
 | R7        | 49.9k               | 0603           | Resistor           | [https://mou.sr/3BBcDgp](https://mou.sr/3BBcDgp) |
@@ -240,7 +234,7 @@ Note: If your game(s) are 2 MB, you do not need U9 and C9 (for Game 1) and/or U1
 | Reference | Value/Part Number | Package   | Description      | Source                                           |
 | --------- | ----------------- | --------- | ---------------- | ------------------------------------------------ |
 | C14       | 0.1u              | 0603      | Capacitor (MLCC) | [https://mou.sr/3ENc15O](https://mou.sr/3ENc15O) |
-| R13       | 1k                | 0603      | Resistor         | [https://mou.sr/3U0EvS4](https://mou.sr/3U0EvS4) |
+| R13       | 10k               | 0603      | Resistor         | [https://mou.sr/3riR7IH](https://mou.sr/3riR7IH) |
 | U14       | 74HC74            | TSSOP-14  | Flip-Flop        | [https://mou.sr/4eroZpu](https://mou.sr/4eroZpu) |
 
 ### Group D (Optional) - Multicart mode switches/jumpers
