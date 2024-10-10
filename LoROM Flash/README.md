@@ -266,7 +266,7 @@ Note: If your game(s) are 2 MB, you do not need U9 and C9 (for Game 1) and/or U1
 
 - Fixed C9 and C12 positions on PCB
 - Added resistors under all switches as alternative
-- Changed R8 through R11 and R14/R15 to pull-down resistors
+- Changed R8 through R11 and R14 to pull-down resistors
 - Added Q1 to ensure RAM start-up at correct time
 - Simplified multicart circuit to reduce battery current draw, lower the BOM count/cost and simplify the design
 - Change board outline to differentiate board from other similar boards
