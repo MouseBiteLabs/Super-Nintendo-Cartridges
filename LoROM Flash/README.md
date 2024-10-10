@@ -1,4 +1,4 @@
-# Super Nintendo Advanced Flash Cartridge - LoROM (SHVC-8XL8S-01A)
+# Super Nintendo Advanced Flash Cartridge - LoROM (SHVC-8XL8D-01A)
 
 # **THIS REPOSITORY IS UNFINISHED AND THE GERBERS ARE UNTESTED!**
 
@@ -256,6 +256,10 @@ Note: If your game(s) are 2 MB, you do not need U9 and C9 (for Game 1) and/or U1
 | SW6       | DS04-254-2-02BK-SMT | 2-position DIP | DIP Switch (2-pos) | [https://mou.sr/3B7BqZr](https://mou.sr/3B7BqZr) |
 
 ## Revision History
+
+### v1.2 - Hotfix
+
+- Fix board number on top right corner
 
 ### v1.1 - Release
 
