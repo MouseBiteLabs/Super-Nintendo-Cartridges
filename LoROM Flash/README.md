@@ -180,6 +180,7 @@ Note: J1 is a space that allows you to program the PIC using the standard ISP pi
 ### Group B - adds 32 KB of RAM
 
 Note 1: If you are making a multicart, you must use the AS6C1008 for U10. 
+
 Note 2: If you are using an AS6C62256, you can omit R14 and R15.
 
 | Reference | Value/Part Number   | Package        | Description        | Source                                           |
