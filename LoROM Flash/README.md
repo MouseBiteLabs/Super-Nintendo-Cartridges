@@ -133,7 +133,7 @@ The factor of 8760 is for converting years to hours (24 hours in a day, 365 days
 
 <a href="https://github.com/MouseBiteLabs/Super-Nintendo-Cartridges/wiki/Troubleshooting-Tips">Please check out the wiki pages for troubleshooting tips.</a>
 
-## Bill of Materials (BOM) (UPDATE)
+## Bill of Materials (BOM)
 
 The component groups required for the build you want to make are detailed above. Note that the "optional" groups mostly only contain the switches, as you can manually set the switch position with a 0-ohm resistor (or, lack of a resistor). Remember, shorting the pads means the switch is ON, and keeping the pads depopulated means the switch is OFF.
 
