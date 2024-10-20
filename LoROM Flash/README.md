@@ -129,7 +129,9 @@ You only need to do this if you are planning to use multicart mode. All you have
 
 To accurately estimate the battery life, you must first solder the battery in, and then either program your game in the OSCR or power it on in a Super Nintendo.
 
-After that, measure the voltage across R1 using a multimeter in DC mV mode, touching the probes to the two test point pads on either side of R1. You should read something around 10 mV or less. If you are severely higher than 10 mV, like in the 100's of mV, then you have a problem on your board.
+After that, measure the voltage across R1 using a multimeter in DC mV mode, touching the probes to the two test point pads on either side of R1 (or, the + and - pads on the back of the board below my smiling face). You should read something around 10 mV or less. If you are severely higher than 10 mV, like in the 100's of mV, then you have a problem on your board.
+
+![image](https://github.com/user-attachments/assets/eba886f9-e66b-47e6-a152-5253ecfae45b)
 
 Once you have a suitable voltage, find the milliamp-hour rating of your selected battery (preferrably from a datasheet). For example, a Renata CR2032 battery is rated for 225 mAh.
 
