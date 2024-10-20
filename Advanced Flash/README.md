@@ -1,10 +1,10 @@
 # Super Nintendo Advanced Flash Cartridge (SNES-8XJ4D-01A)
 
-# **THIS REPOSITORY IS UNFINISHED AND THE GERBERS ARE UNTESTED!**
+# Order at your own risk -- v1.2 is untested
 
 This is a new and improved Super Nintendo cartridge circuit board design that is capable of being flashed via the <a href="https://github.com/sanni/cartreader">Open Source Cart Reader (OSCR) by sanni</a>. Alternatively, you can also flash the ROM chips before soldering them to the board through the use of a programmer like the <a href="https://xgecu.myshopify.com/products/xgecu-new-t48-tl866-3gprogrammer-v12-01-support-28000-ics-for-spi-nor-nand-flash-emmc-bga153-162-169-100-221-tsop-sop-plcc">T48 programmer</a> with the <a href="https://xgecu.myshopify.com/products/100-original-xgecu-adp_f48_ex-1-tsop48-special-adapter-for-nor-flash-only-use-on-t48-tl866-3g-programmer">TSOP48 adapter</a>. This cartridge is made entirely from **brand new off the shelf components.** No donors are required, and you don't need to rely on AliExpress or eBay for parts!
 
-![image](https://github.com/user-attachments/assets/cba9c11b-9970-4ec6-a183-312bec8bb5bb)
+![image](https://github.com/user-attachments/assets/c41440a1-6d12-4ae7-865a-c446aa7ee0c0)
 
 This cartridge covers over 95% of the entire SNES library, capable of any standard cartridge **but not those with co-processors, such as SA-1 or SuperFX.** You can backup games onto it with the following settings:
 - All memory maps supported: LoROM, HiROM, ExLoROM, and ExHiROM
@@ -113,13 +113,19 @@ For setting the SRAM size using SW2, you must do the following:
 - For 8 KB of RAM, set positions 1 and 2 ON, and 3 and 4 OFF. **REMOVE R8 AND R9 FROM THE BOARD.**
 - For 32 KB of RAM, set all positions ON. **REMOVE R8, R9, R10, AND R11 FROM THE BOARD.**
 
-If you *do not* remove the resistors as defined above, your save battery life will be severely impacted. Speaking of which...
+If you *do not* remove the resistors as defined above, your save battery life will be severely impacted. 
+
+### Multicarts for v1.1
+
+You *cannot* make multicarts on v1.1.
 
 ## Estimating Battery Life
 
 To accurately estimate the battery life, you must first solder the battery in, and then either program your game in the OSCR or power it on in a Super Nintendo.
 
-After that, measure the voltage across R1 using a multimeter in DC mV mode, touching the probes to the two test point pads on either side of R1. You should read something around 10 mV or less. If you are severely higher than 10 mV, like in the 100's of mV, then you have a problem on your board.
+After that, measure the voltage across R1 using a multimeter in DC mV mode, touching the probes to the two test point pads on either side of R1 (or, the + and - pads on the back of the board below my smiling face). You should read something around 10 mV or less. If you are severely higher than 10 mV, like in the 100's of mV, then you have a problem on your board.
+
+![image](https://github.com/user-attachments/assets/eba886f9-e66b-47e6-a152-5253ecfae45b)
 
 Once you have a suitable voltage, find the milliamp-hour rating of your selected battery (preferrably from a datasheet). For example, a Renata CR2032 battery is rated for 225 mAh.
 
@@ -261,8 +267,9 @@ Note: If your game(s) are 2 MB, you do not need U9 and C9 (for Game 1) and/or U1
 - Changed R8 through R11 to pull-down resistors
 - Added Q1 to ensure RAM start-up at correct time
 - Simplified multicart circuit to reduce battery current draw, lower the BOM count/cost and simplify the design
+- Remove "1" from single DIP switches for clarity
 
-### v1.1
+### v1.1 - Beta
 
 - Change reference designators CC1 to CC, CB1 to CB
 - Make silkscreen thicker, pin 1 indicators bigger, add boxes around passives
@@ -271,7 +278,7 @@ Note: If your game(s) are 2 MB, you do not need U9 and C9 (for Game 1) and/or U1
 - Change Prog/Play to more descriptive language
 - Add pads for resistors instead of switches
 
-### v1.0
+### v1.0 - Alpha
 
 - Prototype version
 
