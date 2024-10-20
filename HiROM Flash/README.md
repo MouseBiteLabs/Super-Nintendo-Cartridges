@@ -6,7 +6,7 @@ This is a new and improved Super Nintendo cartridge circuit board design that is
 
 This is the **HiROM-only variant** of the <a href="https://github.com/MouseBiteLabs/Super-Nintendo-Cartridges">Advanced Flash cartridge</a>.
 
-![image](https://github.com/user-attachments/assets/9ad83123-df09-464f-ab0b-398c9d90a864)
+![image](https://github.com/user-attachments/assets/84d2c8b3-25dd-40bf-98c4-2bb075260a70)
 
 This cartridge is capable of any standard cartridge with the HiROM or ExHiROM mapping **but not those with co-processors, such as SA-1 or SuperFX.** You can backup games onto it with the following settings:
 - Can be programmed to operate as a multicart, changing games by pressing the SNES reset button (this includes the ability to make two games of the same memory map, or one of each)
@@ -113,7 +113,13 @@ For setting the SRAM size using SW2, you must do the following:
 
 SW6 cannot be used on this board, so games are restricted to 32 KB of RAM maximum.
 
-If you *do not* remove the resistors as defined above, your save battery life will be severely impacted. Speaking of which...
+If you *do not* remove the resistors as defined above, your save battery life will be severely impacted.
+
+## Fix for v1.1
+
+You only need to do this if you are planning to use multicart mode. All you have to do is solder a wire from the top of R5 to the top of SW5.
+
+![image](https://github.com/user-attachments/assets/d9073b36-a08d-4124-99ef-c4b2ccdcbe25)
 
 ## Estimating Battery Life
 
@@ -255,11 +261,13 @@ Note: If your game(s) are 2 MB, you do not need U9 and C9 (for Game 1) and/or U1
 
 ## Revision History
 
-### v1.2 - Hotfix
+### v1.2 - Release
 
 - Fix board number on top right corner
+- Fix multicart net to ROM selection
+- Remove "1" from single DIP switches for clarity
 
-### v1.1 - Release
+### v1.1 - Beta
 
 - Fixed C9 and C12 positions on PCB
 - Added resistors under all switches as alternative
@@ -268,7 +276,7 @@ Note: If your game(s) are 2 MB, you do not need U9 and C9 (for Game 1) and/or U1
 - Simplified multicart circuit to reduce battery current draw, lower the BOM count/cost and simplify the design
 - Change board outline to differentiate board from other similar boards
 
-### v1.0
+### v1.0 - Alpha
 
 - Prototype version
 
