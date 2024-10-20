@@ -1,6 +1,6 @@
 # Super Nintendo Advanced Flash Cartridge - LoROM (SHVC-8XL8D-01A)
 
-# **THIS REPOSITORY IS UNFINISHED AND THE GERBERS ARE UNTESTED!**
+# **Order at your own risk -- v1.2 is untested**
 
 This is a new and improved Super Nintendo cartridge circuit board design that is capable of being flashed via the <a href="https://github.com/sanni/cartreader">Open Source Cart Reader (OSCR) by sanni</a>. Alternatively, you can also flash the ROM chips before soldering them to the board through the use of a programmer like the <a href="https://xgecu.myshopify.com/products/xgecu-new-t48-tl866-3gprogrammer-v12-01-support-28000-ics-for-spi-nor-nand-flash-emmc-bga153-162-169-100-221-tsop-sop-plcc">T48 programmer</a> with the <a href="https://xgecu.myshopify.com/products/100-original-xgecu-adp_f48_ex-1-tsop48-special-adapter-for-nor-flash-only-use-on-t48-tl866-3g-programmer">TSOP48 adapter</a>. This cartridge is made entirely from **brand new off the shelf components.** No donors are required, and you don't need to rely on AliExpress or eBay for parts!
 
@@ -42,7 +42,7 @@ The zipped folder contains all the gerber files for this board. The following op
 
 You can use the zipped folder at any board fabricator you like. You may also buy the board from PCBWay using this link (disclosure: I receive 10% of the sale value to go towards future PCB orders of my own):
 
-<a href="https://www.pcbway.com/"><img src="https://www.pcbway.com/project/img/images/frompcbway-1220.png" alt="PCB from PCBWay" /></a>
+<a href="https://www.pcbway.com/project/shareproject/Super_Nintendo_Advanced_Flash_Cartridge_LoROM_ed4ed270.html"><img src="https://www.pcbway.com/project/img/images/frompcbway-1220.png" alt="PCB from PCBWay" /></a>
 
 ## Required Equipment
 
