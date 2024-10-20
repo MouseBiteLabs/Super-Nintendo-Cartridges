@@ -115,6 +115,10 @@ SW6 cannot be used on this board, so games are restricted to 32 KB of RAM maximu
 
 If you *do not* remove the resistors as defined above, your save battery life will be severely impacted.
 
+### Multicarts for v1.0
+
+You *cannot* make multicarts on v1.0.
+
 ## Fix for v1.1
 
 You only need to do this if you are planning to use multicart mode. All you have to do is solder a wire from the top of R5 to the top of SW5.
