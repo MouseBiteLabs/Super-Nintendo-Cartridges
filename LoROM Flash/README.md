@@ -6,7 +6,7 @@ This is a new and improved Super Nintendo cartridge circuit board design that is
 
 This is the **LoROM-only variant** of the <a href="https://github.com/MouseBiteLabs/Super-Nintendo-Cartridges">Advanced Flash cartridge</a>.
 
-![image](https://github.com/user-attachments/assets/b7fdfa1e-214a-482b-99a5-e2ae8e606740)
+![image](https://github.com/user-attachments/assets/b1d9608e-f94c-4bbc-8cd4-3dca39cc5c62)
 
 This cartridge is capable of any standard cartridge with the LoROM or ExLoROM mapping **but not those with co-processors, such as SA-1 or SuperFX.** You can backup games onto it with the following settings:
 - Can be programmed to operate as a multicart, changing games by pressing the SNES reset button (this includes the ability to make two games of the same memory map, or one of each)
