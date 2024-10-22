@@ -153,7 +153,7 @@ The component groups required for the build you want to make are detailed above.
 
 The following cart has *the maximum amount* of parts you would potentially need on a single board (essentially, a multicart), plus a few extras of the passive components due to price breaks. This also includes **four M29F160 chips and both the AS6C62256 and AS6C1008.** You can remove the chips you don't need from the shopping cart before ordering, according to the component group assignments below.
 
-https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=b36d269e94 
+https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=b7de252bab
 
 ### Group A - 4 MB ROM, No RAM
 
@@ -205,7 +205,6 @@ Note 2: If you are using an AS6C62256, you can omit R14 and R15.
 | R14       | 100k                | 0603           | Resistor           | [https://mou.sr/49bgMnu](https://mou.sr/49bgMnu) |
 | R15       | 100k                | 0603           | Resistor           | [https://mou.sr/49bgMnu](https://mou.sr/49bgMnu) |
 | U5        | 74HCT139            | TSSOP-16       | Decoder            | [https://mou.sr/4eqzppn](https://mou.sr/4eqzppn) |
-| U6        | 74HCT139            | TSSOP-16       | Decoder            | [https://mou.sr/4eqzppn](https://mou.sr/4eqzppn) |
 | U10       | AS6C62256, AS6C1008 | SOP-28, SOP-32 | SRAM               | [https://mou.sr/3ZxG6jd](https://mou.sr/3ZxG6jd) |
 | U11       | TPS3613             | MSOP-10        | Battery Management | [https://mou.sr/45Ir2kh](https://mou.sr/45Ir2kh) |
 
