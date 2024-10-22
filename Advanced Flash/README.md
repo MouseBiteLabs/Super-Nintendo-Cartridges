@@ -4,7 +4,7 @@
 
 This is a new and improved Super Nintendo cartridge circuit board design that is capable of being flashed via the <a href="https://github.com/sanni/cartreader">Open Source Cart Reader (OSCR) by sanni</a>. Alternatively, you can also flash the ROM chips before soldering them to the board through the use of a programmer like the <a href="https://xgecu.myshopify.com/products/xgecu-new-t48-tl866-3gprogrammer-v12-01-support-28000-ics-for-spi-nor-nand-flash-emmc-bga153-162-169-100-221-tsop-sop-plcc">T48 programmer</a> with the <a href="https://xgecu.myshopify.com/products/100-original-xgecu-adp_f48_ex-1-tsop48-special-adapter-for-nor-flash-only-use-on-t48-tl866-3g-programmer">TSOP48 adapter</a>. This cartridge is made entirely from **brand new off the shelf components.** No donors are required, and you don't need to rely on AliExpress or eBay for parts!
 
-![image](https://github.com/user-attachments/assets/c41440a1-6d12-4ae7-865a-c446aa7ee0c0)
+![image](https://github.com/user-attachments/assets/2f085839-3392-4889-9143-0ae1f0e2bb61)
 
 This cartridge covers over 95% of the entire SNES library, capable of any standard cartridge **but not those with co-processors, such as SA-1 or SuperFX.** You can backup games onto it with the following settings:
 - All memory maps supported: LoROM, HiROM, ExLoROM, and ExHiROM
@@ -147,7 +147,7 @@ The component groups required for the build you want to make are detailed above.
 
 The following cart has *the maximum amount* of parts you would potentially need on a single board (essentially, a multicart), plus a few extras of the passive components due to price breaks. This also includes **four M29F160 chips and both the AS6C62256 and AS6C1008.** You can remove the chips you don't need from the shopping cart before ordering, according to the component group assignments below.
 
-https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=38164934e5
+https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=1bc68cfc83
 
 ### Group A - 4 MB ROM, No RAM
 
