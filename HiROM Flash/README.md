@@ -6,7 +6,7 @@ This is a new and improved Super Nintendo cartridge circuit board design that is
 
 This is the **HiROM-only variant** of the <a href="https://github.com/MouseBiteLabs/Super-Nintendo-Cartridges">Advanced Flash cartridge</a>.
 
-![image](https://github.com/user-attachments/assets/84d2c8b3-25dd-40bf-98c4-2bb075260a70)
+![image](https://github.com/user-attachments/assets/262a28a4-a98e-4609-9b1e-860374c6b697)
 
 This cartridge is capable of any standard cartridge with the HiROM or ExHiROM mapping **but not those with co-processors, such as SA-1 or SuperFX.** You can backup games onto it with the following settings:
 - Can be programmed to operate as a multicart, changing games by pressing the SNES reset button (this includes the ability to make two games of the same memory map, or one of each)
