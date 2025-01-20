@@ -41,6 +41,10 @@ You can use the zipped folder at any board fabricator you like. You may also buy
 
 <a href="https://www.pcbway.com/project/shareproject/Super_Nintendo_Advanced_Flash_Cartridge_7757ec59.html"><img src="https://www.pcbway.com/project/img/images/frompcbway-1220.png" alt="PCB from PCBWay" /></a>
 
+And finally, insideGadgets sells these boards fully populated!
+
+<a href="https://shop.insidegadgets.com/product/snes-advanced-flash-cartridge/"><img src="https://shop.insidegadgets.com/wp-content/uploads/2022/09/ig_logo_2.png"></a>
+
 ## Required Equipment
 
 - You will need basic tools, like a soldering iron, hot plate, and/or hot air rework station.
