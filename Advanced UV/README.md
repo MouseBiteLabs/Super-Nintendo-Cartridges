@@ -6,9 +6,9 @@
 
 This is an updated design of my old <a href="https://mousebitelabs.com/2020/07/08/multi-function-snes-reproduction-board-guide/">SNES Advanced cartridge boards</a>, which utilize older UV EPROM chips 27C160 and/or 27C322. Functionally, this design is the same as the older one, but under the hood I have ported the project over from Eagle to KiCad, and heavily cleaned up the schematic and some of the trace routings. This version is also fully open source.
 
-![image](https://github.com/user-attachments/assets/0153faac-35ae-4d40-9a7e-f44ebfd8153a)
+![image](https://github.com/user-attachments/assets/de87eabf-a550-4653-a665-b4e5072f717e)
 
-![image](https://github.com/user-attachments/assets/e112159b-9bc4-4a30-8ee5-1865bf3a7ea4)
+![image](https://github.com/user-attachments/assets/d9397b29-cf2b-4d8e-aeef-eaf4a468632c)
 
 This cartridge covers over 95% of the entire SNES library, capable of any standard cartridge **but not those with co-processors, such as SA-1 or SuperFX.** You can backup games onto it with the following settings:
 - All memory maps supported: LoROM, HiROM, ExLoROM, and ExHiROM
