@@ -117,8 +117,7 @@ The following cart has *the maximum amount* of parts you would potentially need 
 | D1        | BAT85             | DO-35-2              | Schottky Diode                  | [https://mou.sr/49GVT4m](https://mou.sr/49GVT4m) |
 | D2        | BAT85             | DO-35-2              | Schottky Diode                  | [https://mou.sr/49GVT4m](https://mou.sr/49GVT4m) |
 | D3        | BAT85             | DO-35-2              | Schottky Diode                  | [https://mou.sr/49GVT4m](https://mou.sr/49GVT4m) |
-| Q1A       | 2N3904            | TO-92-3              | NPN BJT                         | [https://mou.sr/3HlkU91](https://mou.sr/3HlkU91) |
-| Q1B       | MMBT3904          | SOT-23-3             | NPN BJT                         | [https://mou.sr/3C8piaZ](https://mou.sr/3C8piaZ) |
+| Q1        | 2N3904            | TO-92-3 / SOT-23-3   | NPN BJT                         | THT: [https://mou.sr/3HlkU91](https://mou.sr/3HlkU91), SMT: [https://mou.sr/3C8piaZ](https://mou.sr/3C8piaZ) |
 | R1        | 1k                | Axial                | Resistor                        | [https://mou.sr/4hYkrZr](https://mou.sr/4hYkrZr) |
 | R2        | 100k              | Axial                | Resistor                        | [https://mou.sr/3Ib4SgO](https://mou.sr/3Ib4SgO) |
 | R3        | 10k               | Axial                | Resistor                        | [https://mou.sr/42AN0WU](https://mou.sr/42AN0WU) |
