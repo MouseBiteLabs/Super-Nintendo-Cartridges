@@ -5960,7 +5960,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5b102c9c-2d98-4245-9020-0d30ec6d4bda")
-		(property "Reference" "CB1"
+		(property "Reference" "CB"
 			(at 240.538 149.86 0)
 			(effects
 				(font
@@ -6041,7 +6041,7 @@
 		(instances
 			(project "SNES_Advanced_UV_1-0"
 				(path "/174e013e-6c2d-4e07-a41c-d66da3153f42/e5c4dfa1-4c7d-41d9-89a0-07b7dfe0aa1c"
-					(reference "CB1")
+					(reference "CB")
 					(unit 1)
 				)
 			)
