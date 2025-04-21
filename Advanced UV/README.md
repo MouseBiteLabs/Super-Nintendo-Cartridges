@@ -60,6 +60,8 @@ You can use the zipped folder at any board fabricator you like. You may also buy
 
 You *do not* need every single part on this board to make a game. The game you want to make is mainly dependent on the memory mapping (LoROM, HiROM, etc), the ROM size, and the RAM size. Depending on your needs, you only need to solder on certain components, which you can find below in the BOM section.
 
+Keep in mind that the 27C160 can hold up to 2 MB of ROM data, and the 27C322 can hold up to 4 MB. You can use either of those chips in ROM slots 1 and 2, but if you are going to make an ExLoROM or ExHiROM game, ROM1 needs to be a 27C322. ROM2 in this case *can* be a 27C160, but only if the ROM is 6 MB total in size.
+
 - **Every board needs Group A components.** You can make LoRom or HiROM games that have no RAM and are up to 4 MB large with this configuration.
 - If you need RAM space, **add Group B components.** This will add up to 128 KB of RAM space.
 - If your game is larger than 4 MB, it will use the ExLoROM or ExHiROM memory mapping. **Add Group C components for this.**
