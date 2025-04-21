@@ -117,6 +117,7 @@ The following cart has *the maximum amount* of parts you would potentially need 
 
 - Release of the KiCad-ported version of my original SNES Advanced cart design
 - Removed the "SRAM Enable" pads and made the SRAM always enabled
+- HOTFIX: changed QR code, added open source hardware logo
 
 ## Acknowledgements
 
