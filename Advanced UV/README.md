@@ -56,14 +56,62 @@ You can use the zipped folder at any board fabricator you like. You may also buy
 
 ## Board Configurations
 
-You *do not* need every single part on this board to make a game. The game you want to make is mainly dependent on the memory mapping (LoROM, HiROM, etc), the ROM size, and the RAM size. Depending on your needs, you only need to solder on certain components, which you can find below in the BOM section.
+This board is highly customizable. You *do not* need every single part on this board to make a game. The game you want to make is mainly dependent on the memory mapping (LoROM, HiROM, etc), the ROM size, and the RAM size. Depending on your needs, you only need to solder on certain components, which you can find below in the BOM section. You will also need to configure the game with the various solder jumpers on the back of the board.
 
-Keep in mind that the 27C160 can hold up to 2 MB of ROM data, and the 27C322 can hold up to 4 MB. You can use either of those chips in ROM slots 1 and 2, but if you are going to make an ExLoROM or ExHiROM game, ROM1 needs to be a 27C322. ROM2 in this case *can* be a 27C160, but only if the ROM is 6 MB total in size.
+<a href="https://github.com/MouseBiteLabs/Super-Nintendo-Cartridges/wiki/Advanced-UV">**I highly recommend checking out the various examples of board configurations on the wiki.**</a>
+
+### Components Required
+
+I've split up the requisite parts into a few different "Groups" which you can find a comprehensive list for in the BOM section a few sections down from this one.
 
 - **Every board needs Group A components.** You can make LoRom or HiROM games that have no RAM and are up to 4 MB large with this configuration.
 - If you need RAM space, **add Group B components.** This will add up to 128 KB of RAM space.
 - If your game is larger than 4 MB, it will use the ExLoROM or ExHiROM memory mapping. **Add Group C components for this.**
 - For multicarts, you can make a board with two games on it up to 4 MB each. You will need Group C components, **as well as Group D components.**
+
+#### Socket Configurations
+
+If your game is the LoROM or ExLoROM mapping type, solder U3 (and U4 if necessary) in the bottom set of sockets (labeled "LO" on the left side). If your game is of the HiROM or ExHiROM mapping type, solder U3 (and U4 if necessary) in the top set of sockets (labeled "HI" on the left side). Furthermore, if you are making a LoROM or ExLoROM game that has SRAM, then populate the U8L socket. If you are making a HiROM or ExHiROM game that has SRAM, then populate the U8H socket. Note that you can populate both U8L and U8H without issue, if you want.
+
+If you are making a multicart, both games must be of the *same* mapping type. You cannot make one HiROM and one LoROM game in a multicart.
+
+Keep in mind that the 27C160 can hold up to 2 MB of ROM data, and the 27C322 can hold up to 4 MB. You can use either of those chips in ROM slots 1 and 2, but if you are going to make an ExLoROM or ExHiROM game, ROM1 needs to be a 27C322. ROM2 in this case *can* be a 27C160, but only if the ROM is 6 MB total in size.
+
+### Solder Jumpers
+
+There are two types of solder jumper pads on the board - the 2-segment and 3-segment. For the 2-segment pads, if they need to be connected, simply bridge the two with solder. For the 3-segment pads, use a solder bridge on the middle pad to either side depending on the option you need.
+
+#### U8 Bypass
+
+This is the only set of pads on the front of the board. If your game does not use SRAM, then you must solder these pads together. **Do not solder these pads if your game uses SRAM.**
+
+#### U3/U4 Configuration
+
+On the reverse side of U3 and U4 are three sets of pads used to set what kind of EPROM you are using, and in the case of the 27C322, what mapping type you are using.
+
+![image](https://github.com/user-attachments/assets/54c27dd1-dc9c-45ff-80d2-0bd233a7c004)
+
+Keep in mind that if you are using both ROM1 and ROM2, both EPROMs *must* be in the same mapping type sockets - either both LoROM or both HiROM. You cannot mix the two mapping types between EPROMs. You can however use one 27C322 in ROM1 and a 27C160 in ROM2 for EX-mode games, or 27C160 in ROM1 as well if making a multicart.
+
+#### LoROM/HiROM
+
+These are all 3-segment pads. They only need to be configured on the back if you are making a game that contains SRAM.
+
+#### Single/Multi
+
+The pads on the bottom right of the back of the board are mandatory for every game. Solder the middle pad to the top for single game configuration, or to the bottom for multicart configuration. The pads on the top middle of the back of the board only need to be configured if your cartridge uses SRAM.
+
+#### SRAM Size
+
+The set of pads at the top left underneath the SRAM chip configure the size of the SRAM that the SNES will see. All pads must be configured if you are using SRAM, and each set of 2 should be soldered in the same direction. The example picture below shows a game configured for 256 Kbit of SRAM. **It is important to note these numbers represent the SRAM in BITS, not BYTES. To figure out the BYTES of SRAM, take the numbers here and divide by 8.**
+
+![image](https://github.com/user-attachments/assets/51d948bd-0b3d-4d43-90a9-a83ab34eb02d)
+
+### Multicart Configuration
+
+If you are setting you cartridge up for a multicart, you must bend out pin 2 (AS6C1008) or pin 1 (AS6C62256) on the SRAM chip and solder it to the outside hole.
+
+![image](https://github.com/user-attachments/assets/15bea794-99e1-43f8-b5bb-4e3f0d860b4b)
 
 ## Estimating Battery Life
 
