@@ -91,6 +91,8 @@ The component groups required for the build you want to make are detailed above.
 
 The following cart has *the maximum amount* of parts you would potentially need on a single board (essentially, a multicart), plus a few extras of the passive components due to price breaks. Importantly, though, this does not include the UV EPROM chips (27C160 and 27C322) because those are only available as old stock from places like AliExpress and/or eBay.
 
+https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=686eaad9eb
+
 ### Group A - 4 MB ROM, No RAM
 
 | Reference | Value/Part Number | Package              | Description                     | Source                                           |
@@ -130,7 +132,7 @@ The following cart has *the maximum amount* of parts you would potentially need 
 
 ### Group B (Optional) - adds 128 KB of RAM (instead of 32 KB)
 
-Replace U5 in Group B above with the part detailed here, and add the other three components.
+Replace U5 in Group B above with the part detailed here, and add the other three components. **I personally recommend sticking to the AS6C62256 SRAM chip unless you absolutely need more RAM space.**
 
 | Reference | Value/Part Number | Package | Description | Source                                           |
 | --------- | ----------------- | ------- | ----------- | ------------------------------------------------ |
