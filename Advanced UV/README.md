@@ -14,7 +14,7 @@ This cartridge covers over 95% of the entire SNES library, capable of any standa
 - All memory maps supported: LoROM, HiROM, ExLoROM, and ExHiROM
 - Can be programmed to operate as a multicart, changing games by pressing the SNES reset button
 - Up to 8 MB of ROM space for a single game or 4 MB of ROM space for two games
-- Up to 128 KB of RAM space for a single game or two separate banks of 32 KB RAM space for two games
+- Up to 128 KB of RAM space for a single game or two separate banks of 64 KB RAM space for two games
 
 All gerbers and source files can be found in this repo, as again, this project is fully open source. Please read all instructions before attempting the project.
 
