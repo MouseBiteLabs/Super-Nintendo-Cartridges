@@ -16,6 +16,12 @@ This cartridge covers over 95% of the entire SNES library, capable of any standa
 
 All gerbers and source files can be found in this repo, as again, this project is fully open source. Please read all instructions before attempting the project.
 
+## Tutorial Video
+
+This video is older, but still applies to this board.
+
+[![Video Tutorial](http://img.youtube.com/vi/PpTQDjmsrEo/maxresdefault.jpg)](https://www.youtube.com/watch?v=PpTQDjmsrEo "How to Make a SNES Cartridge")
+
 ## Important Things Before You Start
 
 1) <a href="https://github.com/MouseBiteLabs/Super-Nintendo-Cartridges/wiki">Please review the wiki for more information about using the circuit boards, instructions for how to program them, and example builds.</a>
