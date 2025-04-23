@@ -13,7 +13,7 @@ Note that the boards listed below are planned for development. No dates for uplo
 | <a href="https://github.com/MouseBiteLabs/Super-Nintendo-Cartridges/tree/main/Advanced%20Flash">Advanced Flash</a> | SHVC-8XJ4D-01A     | 8 MB             | 32 KB            | LoROM, HiROM, ExLoROM, ExHiROM | Yes (2 games; 4MB ROM, 32KB RAM)  | Type A (M29F160)       |
 | <a href="https://github.com/MouseBiteLabs/Super-Nintendo-Cartridges/tree/main/LoROM%20Flash">LoROM Flash</a>       | SHVC-8XL8D-01A     | 8 MB             | 128 KB           | LoROM, ExLoROM                 | Yes (2 games; 4MB ROM, 32KB RAM)  | Type A (M29F160)       |
 | <a href="https://github.com/MouseBiteLabs/Super-Nintendo-Cartridges/tree/main/HiROM%20Flash">HiROM Flash</a>       | SHVC-8XH8D-01A     | 8 MB             | 128 KB           | HiROM, ExHiROM                 | Yes (2 games; 4MB ROM, 32KB RAM)  | Type A (M29F160)       |
-| <a href="https://mousebitelabs.com/2020/07/08/multi-function-snes-reproduction-board-guide/">Advanced UV</a>       | SHVC-8XJ8D-01C     | 8 MB             | 128 KB           | LoROM, HiROM, ExLoROM, ExHiROM | Yes (2 games; 4MB ROM, 32KB RAM)  | Type C (27C322)        |
+| <a href="https://github.com/MouseBiteLabs/Super-Nintendo-Cartridges/tree/main/Advanced%20UV">Advanced UV</a>       | SHVC-8XJ8D-01C     | 8 MB             | 128 KB           | LoROM, HiROM, ExLoROM, ExHiROM | Yes (2 games; 4MB ROM, 32KB RAM)  | Type C (27C322)        |
 | <a href="https://mousebitelabs.com/2019/08/12/how-to-make-a-snes-reproduction-cartridge-quick-guide/">Basic UV</a>             | SHVC-4NJ8D-01C     | 4 MB             | 128 KB           | LoROM, HiROM                   | No                                | Type C (27C160)        |
 
 ## Naming Convention
