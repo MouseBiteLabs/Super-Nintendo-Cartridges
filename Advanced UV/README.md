@@ -52,8 +52,9 @@ You can use the zipped folder at any board fabricator you like. You may also buy
 
 - You will need basic tools, like a soldering iron, hot plate, and/or hot air rework station.
 - You need a way to program the ROM chip(s). There are two ways I have programmed them in the past:
-  - Using the <a href="https://xgecu.myshopify.com/products/xgecu-new-t48-tl866-3gprogrammer-v12-01-support-28000-ics-for-spi-nor-nand-flash-emmc-bga153-162-169-100-221-tsop-sop-plcc">T48 programmer</a> with my <a href="https://github.com/MouseBiteLabs/27C322-TL866-Adapter">27C322 to TL866 Programming Adatper</a> board. The programming adapter is compatible with the T48, and it allows you to program the 42-pin EPROMs (27C160 and 27C322) with the 40-pin T48 programmer, or
-  - Using the <a href="https://www.mcumall.com/store/index.php?route=product/product&path=66&product_id=85">GQ4x programmer</a>.
+  - Using the <a href="https://xgecu.myshopify.com/products/xgecu-new-t48-tl866-3gprogrammer-v12-01-support-28000-ics-for-spi-nor-nand-flash-emmc-bga153-162-169-100-221-tsop-sop-plcc">T48 programmer</a> with my <a href="https://github.com/MouseBiteLabs/27C322-TL866-Adapter">27C322 to TL866 Programming Adatper</a> board. The programming adapter is compatible with the T48, and it allows you to program the 42-pin EPROMs (27C160 and 27C322) with the 40-pin T48 programmer.
+  OR
+  - Using the <a href="https://www.mcumall.com/store/index.php?route=product/product&path=66&product_id=85">GQ4x programmer</a> with the ZIF adapter board that comes with it.
 - This cartridge uses the PIC12F629 with the <a href="https://sd2snes.de/blog/cool-stuff/supercic">SuperCIC code</a> to fake out the lockout chip. You will need a way to program these PIC chips. I use the T48 to do so, but you can also use something like the <a href="https://www.microchip.com/en-us/development-tool/pg164130">PICkit 3.</a> Note that if you have region modded your SNES, you won't need the lockout chips in the cartridges.
 
 ## How to Program
