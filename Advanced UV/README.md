@@ -114,6 +114,10 @@ The set of pads at the top left underneath the SRAM chip configure the size of t
 
 ![image](https://github.com/user-attachments/assets/51d948bd-0b3d-4d43-90a9-a83ab34eb02d)
 
+Note: If you want to set the RAM size to zero, but still have a RAM chip installed, then simply unsolder the right-most HIROM/LOROM solder pads on the backside of the board.
+
+![image](https://github.com/user-attachments/assets/a1aeb08d-7458-4dc5-a13e-d5602d0cf16b)
+
 ### Multicart Configuration
 
 If you are setting you cartridge up for a multicart, you must bend out pin 2 (AS6C1008) or pin 1 (AS6C62256) on the SRAM chip and solder it to the outside hole.
