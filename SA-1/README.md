@@ -79,7 +79,7 @@ Solder the middle pad (SA-1 pin 127) to GND for NTSC or VCC for PAL.
 
 If your game uses SRAM, and you are using the 6264 size of SRAM (like the AS6C6264), then solder to the left pad accordingly. If your game uses the 62256 or 1008 size SRAM, then solder to the right pad.
 
-**NOTE:** If you are using a 6264 SRAM chip, you **must** populate R12 and R13 with 10k ohm resistors (see BOM section below).
+**NOTE:** If you are using a 6264 SRAM chip, you **must** populate R13 with a 10k ohm resistor (see BOM section below).
 
 ### SJ3 - UV EPROM Selection
 
@@ -101,10 +101,15 @@ There are a handful of components on the board that never appear in any SA-1 gam
 - FB1-FB8, which are ferrite beads for filtering high frequency noise, seen in a handful of cart types but likely not required (like R4, these are shorted by default)
 - C15, a 33pF capacitor, which as far as I can tell appears only on <a href="https://snescentral.com/pcbboards.php?chip=SHVC-1L5B-20">SHVC-1L5B-20 boards</a> and on <a href="https://snescentral.com/pcbboards.php?chip=SNSP-1L0N3S-01">SNSP-1L0N3S-01 boards</a> (where it is called C14) - as such, this can likely be omitted from your design
 - C13 and C14 *never* appear populated on any SA-1 board from what I can find on SNES Central
-- R12 will be populated *only if* you are making a game with RAM, **but not a back-up battery.** DO NOT populate R12 if you have either U4 or U5 populated.
-- R13 will be populated *only if* you are using a 6264 SRAM chip, and if you are using anything larger this will remain unpopulated (this is a stand-in for some of the unmarked and masked off components near the battery on original boards)
 
-If you run into weird issues with your games, perhaps some of these components could aid in fixing them. Feel free to update me with any information you wish to share in this regard and I will update accordingly.
+If you run into weird issues with your games, perhaps adding one/some of these components could aid in fixing them. Feel free to update me with any information you wish to share in this regard and I will update accordingly.
+
+## Special Case Components
+
+Two components have dashed boxes, but are required on the board only for specific scenarios:
+
+- R12 will be populated *only if* you are making a game with RAM, **but not a back-up battery.** DO NOT populate R12 if you have either U4 or U5 populated.
+- R13 will be populated *only if* you are using a 6264 SRAM chip, and if you are using anything larger this will remain unpopulated (this is a stand-in for some of the unmarked and masked off components near the battery on original boards).
 
 ## Extra Pads (Experimental Use)
 
