@@ -116,7 +116,7 @@ I added a few pads to access unused pins if anyone wants to experiment with them
 
 ## Estimating Battery Life
 
-To accurately estimate the battery life, measure the voltage across R1 using a multimeter in DC mV mode, touching the probes to the two test point pads on either side of R1 (on the back of the board). You should read something around 1 mV or less. If you are severely higher than 10 mV, like in the 100's of mV, then you have a problem on your board. (Did you inappropriately populate R12 and/or R13?)
+To accurately estimate the battery life, measure the voltage across R1 using a multimeter in DC mV mode, touching the probes to the two test point pads on either side of R1 (on the back of the board). You should read something around 1 mV or less. If you are severely higher than 10 mV, like in the 100's of mV, then you have a problem on your board. (Did you *inappropriately* populate R12?)
 
 Once you have a suitable voltage, find the milliamp-hour rating of your selected battery (preferrably from a datasheet). For example, a Renata CR2032 battery is rated for 225 mAh.
 
