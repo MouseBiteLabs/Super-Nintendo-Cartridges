@@ -99,10 +99,11 @@ There are a handful of components on the board that never appear in any SA-1 gam
 
 - R4, which is normally shorted on every cartridge (if you want to add a series resistor here, you must first cut the trace between the pads)
 - FB1-FB8, which are ferrite beads for filtering high frequency noise, seen in a handful of cart types but likely not required (like R4, these are shorted by default)
-- C15, a 33pF capacitor, which as far as I can tell appears only on <a href="https://snescentral.com/pcbboards.php?chip=SHVC-1L5B-20">SHVC-1L5B-20 boards</a> and on <a href="https://snescentral.com/pcbboards.php?chip=SNSP-1L0N3S-01">SNSP-1L0N3S-01 boards</a> (where it is called C14) - as such, this can likely be omitted from your design
 - C13 and C14 *never* appear populated on any SA-1 board from what I can find on SNES Central
 
 If you run into weird issues with your games, perhaps adding one/some of these components could aid in fixing them. Feel free to update me with any information you wish to share in this regard and I will update accordingly.
+
+- C15, a 33pF capacitor, appears on boards released later in the life of the SNES, sometime around the end of 1996 as far as I can tell from board pictures on SNES Central. It is likely not *required* for operation, but perhaps it fixes some weird edge cases or graphical issues. In any case, I believe it's the same value as C12 (will confirm if I get the right board to measure it), so it doesn't hurt to include it in my opinion. But you technically shouldn't need it.
 
 ## Special Case Components
 
@@ -161,6 +162,7 @@ Please see <a href="https://github.com/MouseBiteLabs/Super-Nintendo-Cartridges/w
 | C9        | 0.01uF            | 0603                 | Capacitor (MLCC)                | [https://mou.sr/3AsRwK1](https://mou.sr/3AsRwK1) |
 | C10       | 0.01uF            | 0603                 | Capacitor (MLCC)                | [https://mou.sr/3AsRwK1](https://mou.sr/3AsRwK1) |
 | C12       | 33pF              | 0603                 | Capacitor (MLCC)                | [https://mou.sr/4cYZLxw](https://mou.sr/4cYZLxw) |
+| C15       | 33pF              | 0603                 | Capacitor (MLCC)                | [https://mou.sr/4cYZLxw](https://mou.sr/4cYZLxw) |
 | R2        | 510k              | 0603                 | Resistor                        | [https://mou.sr/3zi8ayj](https://mou.sr/3zi8ayj) |
 | R3        | 1k                | 0603                 | Resistor                        | [https://mou.sr/3U0EvS4](https://mou.sr/3U0EvS4) |
 | R5        | 1.5k              | 0603                 | Resistor                        | https://mou.sr/4aiZKUE                           |
