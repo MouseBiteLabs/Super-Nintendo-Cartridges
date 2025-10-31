@@ -101,7 +101,8 @@ There are a handful of components on the board that never appear in any SA-1 gam
 - FB1-FB8, which are ferrite beads for filtering high frequency noise, seen in a handful of cart types but likely not required (like R4, these are shorted by default)
 - C15, a 33pF capacitor, which as far as I can tell appears only on <a href="https://snescentral.com/pcbboards.php?chip=SHVC-1L5B-20">SHVC-1L5B-20 boards</a> and on <a href="https://snescentral.com/pcbboards.php?chip=SNSP-1L0N3S-01">SNSP-1L0N3S-01 boards</a> (where it is called C14) - as such, this can likely be omitted from your design
 - C13 and C14 *never* appear populated on any SA-1 board from what I can find on SNES Central
-- R12 and R13 will be populated *only if* you are using a 6264 SRAM chip, and if you are using anything larger these will remain unpopulated (these parts are stand-ins for some of the unmarked and masked off components near the battery on original boards)
+- R12 will be populated *only if* you are making a game with RAM, **but not a back-up battery.** DO NOT populate R12 if you have either U4 or U5 populated.
+- R13 will be populated *only if* you are using a 6264 SRAM chip, and if you are using anything larger this will remain unpopulated (this is a stand-in for some of the unmarked and masked off components near the battery on original boards)
 
 If you run into weird issues with your games, perhaps some of these components could aid in fixing them. Feel free to update me with any information you wish to share in this regard and I will update accordingly.
 
@@ -131,9 +132,12 @@ The factor of 8760 is for converting years to hours (24 hours in a day, 365 days
 
 ## Bill of Materials (BOM)
 
-- Populate Group A for all carts. It will be the only group of components you need if you have no SRAM on the board.
-- Populate Group B to add SRAM and battery back-up, **and then** populate *either* Group C1 or C2 depending on the battery management IC you want to use.
-- Populate Group D **only if** you are using 6264 SRAM from Group B - other SRAM types (62256 or 1008) **do not use** Group D components.
+- Populate Group A for all carts. It will be the only group of components you need if you have no SRAM or battery on the board.
+- Populate Group B to add battery back-up for save data retention.
+- Populate Group C1 or C2 depending on the battery management IC you want to use. Only required if Group B is populated.
+- Populate Group D to add RAM to the board (usually for save data retention).
+- Populate Group E **ONLY IF** you have **NOT** populated Group B, Group C1, and Group C2 components.
+- Populate Group F **ONLY IF** you are using 6264 SRAM from Group D - other SRAM types (62256 or 1008) **do not use** Group F components.
 
 ### Group A - All Carts
 
@@ -155,21 +159,18 @@ The factor of 8760 is for converting years to hours (24 hours in a day, 365 days
 | U1        | 27C322, 27C160    | DIP-42               | UV EPROM                        | AliExpress, eBay                                 |
 | U3        | SA-1              | QFP-128              | Co-processor                    | Donor cartridge                                  |
 
-### Group B - Adds SRAM and Battery Backup
+### Group B - Adds Backup Battery
 
-You will also need to add either Group C1 or C2 if you need Group B components.
+You will need to populate Group C1 or Group C2 in addition to Group B in order to add battery management to the board.
 
 | Reference | Value/Part Number   | Package              | Description                     | Source                                           |
 | --------- | ------------------- | -------------------- | ------------------------------- | ------------------------------------------------ |
 | B1        | CR2032              | CR2032               | Coin Cell Battery               | [https://mou.sr/3QhcXXc](https://mou.sr/3QhcXXc) |
-| CB        | 22u                 | Radial 2.5mm spacing | Aluminum Electrolytic Capacitor | [https://mou.sr/4lzfiK1](https://mou.sr/4lzfiK1) |
-| C5        | 0.01uF              | 0603                 | Capacitor (MLCC)                | [https://mou.sr/3AsRwK1](https://mou.sr/3AsRwK1) |
 | R1        | 1k                  | 0603                 | Resistor                        | [https://mou.sr/3U0EvS4](https://mou.sr/3U0EvS4) |
-| U2        | AS6C6264/62256/1008 | SOP-28/SOP-32        | SRAM                            | https://mou.sr/4qIDtZh                           |
 
 ### Group C1 - Adds Battery Management IC (Donor Cart)
 
-Use parts from Group C1 **OR** C2. Do not use both. Group C1 or C2 are required if SRAM is on the board.
+Use parts from Group C1 **OR** C2. Do not use both. Group C1 or C2 are required if a save battery is on the board.
 
 | Reference | Value/Part Number | Package | Description        | Source                                           |
 | --------- | ----------------- | ------- | ------------------ | ------------------------------------------------ |
@@ -178,7 +179,7 @@ Use parts from Group C1 **OR** C2. Do not use both. Group C1 or C2 are required 
 
 ### Group C2 - Adds Battery Management IC (New Parts)
 
-Use parts from Group C1 **OR** C2. Do not use both. Group C1 or C2 are required if SRAM is on the board.
+Use parts from Group C1 **OR** C2. Do not use both. Group C1 or C2 are required if a save battery is on the board.
 
 | Reference | Value/Part Number | Package | Description        | Source                                           |
 | --------- | ----------------- | ------- | ------------------ | ------------------------------------------------ |
@@ -187,13 +188,30 @@ Use parts from Group C1 **OR** C2. Do not use both. Group C1 or C2 are required 
 | R10       | 49.9k             | 0603    | Resistor           | [https://mou.sr/3BBcDgp](https://mou.sr/3BBcDgp) |
 | U5        | TPS3613           | MSOP-10 | Battery Management | [https://mou.sr/45Ir2kh](https://mou.sr/45Ir2kh) |
 
-### Group D - Only If Using 6264 SRAM
+### Group D - Adds SRAM
 
-ONLY populate these parts if you are using 6264 SRAM.
+Select U2 according to the size of RAM your game requires - 6264 (8KB), 62256 (32KB), or 1008 (128KB).
+
+| Reference | Value/Part Number   | Package              | Description                     | Source                                           |
+| --------- | ------------------- | -------------------- | ------------------------------- | ------------------------------------------------ |
+| CB        | 22u                 | Radial 2.5mm spacing | Aluminum Electrolytic Capacitor | [https://mou.sr/4lzfiK1](https://mou.sr/4lzfiK1) |
+| C5        | 0.01uF              | 0603                 | Capacitor (MLCC)                | [https://mou.sr/3AsRwK1](https://mou.sr/3AsRwK1) |
+| U2        | AS6C6264/62256/1008 | SOP-28/SOP-32        | SRAM                            | https://mou.sr/4qIDtZh                           |
+
+### Group E - For Using SRAM as Work RAM (no battery backup)
+
+Only populate Group E **IF** your game does not have Group B or Group C components. **DO NOT POPULATE IF YOU HAVE A SAVE BATTERY ON THE BOARD.**
+
+| Reference | Value/Part Number   | Package              | Description                     | Source                                           |
+| --------- | ------------------- | -------------------- | ------------------------------- | ------------------------------------------------ |
+| R12       | 10k                 | 0603                 | Resistor                        | [https://mou.sr/3riR7IH](https://mou.sr/3riR7IH) |
+
+### Group F - Only If Using 6264 SRAM
+
+Only populate Group F **IF** you are using 6264 series SRAM.
 
 | Reference | Value/Part Number | Package | Description | Source                                           |
 | --------- | ----------------- | ------- | ----------- | ------------------------------------------------ |
-| R12       | 10k               | 0603    | Resistor    | [https://mou.sr/3riR7IH](https://mou.sr/3riR7IH) |
 | R13       | 10k               | 0603    | Resistor    | [https://mou.sr/3riR7IH](https://mou.sr/3riR7IH) |
 
 ## Revision History
