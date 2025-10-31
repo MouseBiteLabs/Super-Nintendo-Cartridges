@@ -111,7 +111,7 @@ I added a few pads to access unused pins if anyone wants to experiment with them
 
 - RA22 and RA23 go to SA-1 pins 80 and 81, respectively. These are extra ROM address pins. Using RA22 can increase the addressible ROM space to 8 MB, and RA23 can further expand it to 16 MB. This functionality is, as far as I know, theoretical. If someone knows of any homberew games that use this extra space, feel free to let me know.
 - /ROMSEL is not used on this cartridge, but along with /WR, perhaps these could be wired up to a breakout board with ROM chips on them for programming through the cart edge using something like the <a href="https://github.com/sanni/cartreader">OSCR</a>. Again, this is theoretical and may not be possible - but the pads are there for whoever wants to experiment.
-- The SRAM maxes out at 128KB, however one pin on the SA-1 (pin 104) that is unused has been reported to be an extra SRAM pin, which could theoretically expand the size of the SRAM to a maximum of 256KB. This extra address pin is connected to pin 1 on the SRAM package, which is an NC pin for DIP-32 SRAM chips linked in the BOM section.
+- The SRAM maxes out at 128KB, however one pin on the SA-1 (pin 104) that is unused has been reported to be an extra SRAM pin, which could theoretically expand the size of the SRAM to a maximum of 256KB. This extra address pin is connected to pin 1 on the SRAM package, which is an NC pin for 32-pin SRAM chips linked in the BOM section.
 
 ## Estimating Battery Life
 
