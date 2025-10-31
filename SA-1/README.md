@@ -144,6 +144,10 @@ The factor of 8760 is for converting years to hours (24 hours in a day, 365 days
 - Populate Group E **ONLY IF** you have **NOT** populated Group B, Group C1, and Group C2 components.
 - Populate Group F **ONLY IF** you are using 6264 SRAM from Group D - other SRAM types (62256 or 1008) **do not use** Group F components.
 
+### Example Builds
+
+Please see <a href="https://github.com/MouseBiteLabs/Super-Nintendo-Cartridges/wiki/SA%E2%80%901">the example page in the wiki</a> for a companion in keeping track of what parts are necessary for a given build. Equivalent PCB names from original SNES cartridges (SHVC-xxxx) are given when applicable.
+
 ### Group A - All Carts
 
 | Reference | Value/Part Number | Package              | Description                     | Source                                           |
