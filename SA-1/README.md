@@ -4,10 +4,9 @@
 
 This is a SNES cartridge circuit board that houses the proprietary SA-1 processor that was used in a variety of more advanced SNES games. This board should be able to be used as a replacement for all released SA-1 games, as well as many (if not all) SA-1 homebrews or enhanced games. The ROM can be programmed to the popular 27C160 or 27C322 UV EPROM chips, or if you want to use more modern and new components, you can use <a href="https://github.com/MouseBiteLabs/ROM-Adapter-Boards/tree/main/29F160%20to%20UV%20EPROM">my 29F160 to UV EPROM adapter boards</a>. I have also included two options for battery management - a donor MM1026 chip from an original SA-1 cartridge (that has it), or if an MM1026 is not available to use you can use the modern TPS3613 battery management IC.
 
-<img width="2360" height="1308" alt="image" src="https://github.com/user-attachments/assets/c4c97f1e-9861-4b32-8cf9-ef1d52ecd5c1" />
+![FRONT](https://github.com/user-attachments/assets/c1c7d4f0-b7cf-4172-a529-3c3003c49aaa)
 
-<img width="2360" height="1308" alt="image" src="https://github.com/user-attachments/assets/6679a73b-16fa-4c80-9bdd-f03faa869fb8" />
-
+![BACK](https://github.com/user-attachments/assets/c241b753-dace-4c2d-be48-b18c85ec7500)
 
 The board can fit in SNES shells for games that used enhancement chips, as well as standard SNES games (with some minor cutting), and provides:
 - Up to 4 MB of ROM space
