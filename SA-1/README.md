@@ -49,7 +49,7 @@ You can use the zipped folder at any board fabricator you like (NOT YET AVAILABL
   OR
   - Using the <a href="https://www.mcumall.com/store/index.php?route=product/product&path=66&product_id=85">GQ4x4 programmer</a> with the ZIF adapter board that comes with it.
   OR
-  - If you are using the 29F160 ROM adapter boards to place into the 27C322 footprint, you can program the 29F160 chips with the <a href="https://xgecu.myshopify.com/products/xgecu-new-t48-tl866-3gprogrammer-v12-01-support-28000-ics-for-spi-nor-nand-flash-emmc-bga153-162-169-100-221-tsop-sop-plcc">T48 programmer</a> with the <a href="https://xgecu.myshopify.com/products/100-original-xgecu-adp_f48_ex-1-tsop48-special-adapter-for-nor-flash-only-use-on-t48-tl866-3g-programmer">TSOP48 adapter</a> can program the ROM chip(s).
+  - If you are using the 29F160 ROM adapter boards to place into the 27C322 footprint, you can program the 29F160 chips with the <a href="https://xgecu.myshopify.com/products/xgecu-new-t48-tl866-3gprogrammer-v12-01-support-28000-ics-for-spi-nor-nand-flash-emmc-bga153-162-169-100-221-tsop-sop-plcc">T48 programmer</a> and the <a href="https://xgecu.myshopify.com/products/100-original-xgecu-adp_f48_ex-1-tsop48-special-adapter-for-nor-flash-only-use-on-t48-tl866-3g-programmer">TSOP48 adapter</a>.
 - You will need to do some shell cuts to get the board to fit if you're using a standard SNES cartridge shell (detailed later). I recommend using a file set - <a href="https://www.amazon.com/gp/product/B07R3R9461">I bought this one.</a> 
 
 ## How to Program
