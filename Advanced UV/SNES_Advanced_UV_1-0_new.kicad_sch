@@ -2090,7 +2090,7 @@
 				(pin bidirectional line
 					(at -12.7 -20.32 0)
 					(length 2.54)
-					(name "CIC_{D1}"
+					(name "CIC_{D0}"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2522,7 +2522,7 @@
 				(pin bidirectional line
 					(at 12.7 -20.32 180)
 					(length 2.54)
-					(name "CIC_{D0}"
+					(name "CIC_{D1}"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -7237,6 +7237,17 @@
 		(uuid "f119df87-c10d-45f1-b69c-08e93525666e")
 	)
 	(label "CIC.D_{1}"
+		(at 25.4 156.21 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0365dae8-5470-44ce-9a60-31c71e65cf90")
+	)
+	(label "CIC.D_{1}"
 		(at 25.4 121.92 0)
 		(fields_autoplaced yes)
 		(effects
@@ -7742,6 +7753,17 @@
 		)
 		(uuid "7328271e-a0bc-4339-8b41-f594f6d9d6f3")
 	)
+	(label "CIC.D_{0}"
+		(at 25.4 158.75 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "773f886c-11dd-4650-bc20-aaa85c18f5d3")
+	)
 	(label "D_{1}"
 		(at 29.21 74.93 0)
 		(fields_autoplaced yes)
@@ -7907,6 +7929,17 @@
 		)
 		(uuid "97679c61-631b-465a-afad-6f9437194f45")
 	)
+	(label "~{IRQ}"
+		(at 68.58 156.21 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "98d6edbd-a7e2-4327-bd4a-f59309d36e54")
+	)
 	(label "A_{4}"
 		(at 29.21 57.15 0)
 		(fields_autoplaced yes)
@@ -7972,6 +8005,17 @@
 			(justify left bottom)
 		)
 		(uuid "a8984ec4-d18a-486d-8ebb-1902549fa9c7")
+	)
+	(label "CIC.CLK"
+		(at 68.58 161.29 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "aa739ad3-089f-424f-99ef-bcd26f59996e")
 	)
 	(label "Q_{0}"
 		(at 110.49 35.56 0)
@@ -8148,6 +8192,17 @@
 			(justify right bottom)
 		)
 		(uuid "db117ab3-b296-4baa-8bca-649e537fba92")
+	)
+	(label "CIC.RST"
+		(at 25.4 161.29 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "db64cc48-de0c-42ad-aeb4-2dd2a76d42fa")
 	)
 	(label "A_{14}"
 		(at 71.12 44.45 180)
