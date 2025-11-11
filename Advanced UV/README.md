@@ -1,7 +1,5 @@
 # Super Nintendo Advanced UV Cartridge (SNES-8XJ8D-01C)
 
-# Order at your own risk -- v1.0 is untested
-
 This is an updated design of my old <a href="https://mousebitelabs.com/2020/07/08/multi-function-snes-reproduction-board-guide/">SNES Advanced cartridge boards</a>, which utilize older UV EPROM chips 27C160 and/or 27C322. Functionally, this design is the same as the older one, but under the hood I have ported the project over from Eagle to KiCad, and heavily cleaned up the schematic and some of the trace routings. This version is also fully open source.
 
 ![image](https://github.com/user-attachments/assets/de87eabf-a550-4653-a665-b4e5072f717e)
