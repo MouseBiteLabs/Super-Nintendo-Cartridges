@@ -7236,7 +7236,7 @@
 		)
 		(uuid "f119df87-c10d-45f1-b69c-08e93525666e")
 	)
-	(label "CIC.D_{0}"
+	(label "CIC.D_{1}"
 		(at 25.4 121.92 0)
 		(fields_autoplaced yes)
 		(effects
@@ -7401,7 +7401,7 @@
 		)
 		(uuid "27de3417-33c0-4b30-8dd5-dbf42780e437")
 	)
-	(label "CIC.D_{1}"
+	(label "CIC.D_{0}"
 		(at 29.21 85.09 0)
 		(fields_autoplaced yes)
 		(effects
@@ -7698,7 +7698,7 @@
 		)
 		(uuid "5ee919b0-927e-4272-8e28-3b8eb1ea5940")
 	)
-	(label "CIC.D_{0}"
+	(label "CIC.D_{1}"
 		(at 71.12 85.09 180)
 		(fields_autoplaced yes)
 		(effects
@@ -7863,7 +7863,7 @@
 		)
 		(uuid "930994e9-39a4-413f-993c-f54638f0cf53")
 	)
-	(label "CIC.D_{1}"
+	(label "CIC.D_{0}"
 		(at 25.4 124.46 0)
 		(fields_autoplaced yes)
 		(effects

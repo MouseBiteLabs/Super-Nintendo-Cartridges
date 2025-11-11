@@ -4515,6 +4515,7 @@
 	)
 	(label "~{RESET}"
 		(at 176.53 44.45 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4558,6 +4559,7 @@
 	)
 	(label "~{RESET}"
 		(at 109.22 44.45 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)

@@ -9929,7 +9929,7 @@
 		(descr "C, Rect series, Radial, pin pitch=2.50mm, , length*width=4*2.5mm^2, Capacitor")
 		(tags "C Rect series Radial pin pitch 2.50mm  length 4mm width 2.5mm Capacitor")
 		(property "Reference" "C8"
-			(at -1.905 0.635 360)
+			(at -1.905 0.635 0)
 			(layer "F.SilkS")
 			(uuid "61c406fc-23b2-4515-8a98-9a3a3a39feb6")
 			(effects
@@ -11180,7 +11180,6 @@
 			(uuid "850d1283-6a86-4f62-9799-0caefa057663")
 		)
 		(model "${KICAD8_3DMODEL_DIR}/Package_DIP.3dshapes/DIP-32_W15.24mm.wrl"
-			(hide yes)
 			(offset
 				(xyz 0 0 0)
 			)
@@ -11192,6 +11191,7 @@
 			)
 		)
 		(model "${KICAD8_3DMODEL_DIR}/Package_DIP.3dshapes/DIP-28_W15.24mm.wrl"
+			(hide yes)
 			(offset
 				(xyz 0 -5.08 0)
 			)
@@ -20273,7 +20273,7 @@
 		(path "/eb1cf286-2d31-4cf4-b70c-63a014e0be56")
 		(sheetname "Root")
 		(sheetfile "SNES_Advanced_UV_1-0_new.kicad_sch")
-		(attr exclude_from_bom)
+		(attr exclude_from_bom dnp)
 		(fp_line
 			(start -2.159 -1.016)
 			(end 2.159 -1.016)
@@ -24803,7 +24803,7 @@
 		(path "/fecfd659-8b48-4c9e-9793-307e7f7cc91a")
 		(sheetname "Root")
 		(sheetfile "SNES_Advanced_UV_1-0_new.kicad_sch")
-		(attr exclude_from_bom)
+		(attr exclude_from_bom dnp)
 		(fp_line
 			(start -2.159 -1.016)
 			(end 2.159 -1.016)
