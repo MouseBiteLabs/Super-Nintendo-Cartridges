@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "SNES Basic UV Cartridge")
-		(date "2025-11-15")
+		(date "2025-11-17")
 		(rev "v1.0")
 		(company "https://github.com/MouseBiteLabs/Super-Nintendo-Cartridges")
 		(comment 1 "NOTE 1: U2A is surface mount, U2B is through-hole. Only populate one.")

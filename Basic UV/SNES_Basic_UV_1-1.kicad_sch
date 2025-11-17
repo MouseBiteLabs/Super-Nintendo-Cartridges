@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "SNES Basic UV Cartridge")
-		(date "2025-11-15")
+		(date "2025-11-17")
 		(rev "v1.0")
 		(company "https://github.com/MouseBiteLabs/Super-Nintendo-Cartridges")
 		(comment 1 "NOTE 1: U2A is surface mount, U2B is through-hole. Only populate one.")
@@ -12420,7 +12420,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f733f10e-8eba-4a6e-ad9a-24f35d714e7c")
-		(property "Reference" "C22"
+		(property "Reference" "C2"
 			(at 67.31 126.9999 0)
 			(effects
 				(font
@@ -12501,7 +12501,7 @@
 		(instances
 			(project "SNES_Basic_UV_1-0"
 				(path "/174e013e-6c2d-4e07-a41c-d66da3153f42"
-					(reference "C22")
+					(reference "C2")
 					(unit 1)
 				)
 			)

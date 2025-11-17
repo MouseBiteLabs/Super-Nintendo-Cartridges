@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "SNES Basic UV Cartridge")
-		(date "2025-11-15")
+		(date "2025-11-17")
 		(rev "v1.0")
 		(company "https://github.com/MouseBiteLabs/Super-Nintendo-Cartridges")
 		(comment 1 "NOTE 1: U2A is surface mount, U2B is through-hole. Only populate one.")
@@ -2248,12 +2248,6 @@
 		(uuid "4279fa39-44f1-446d-9a1d-329ef18bb3c0")
 	)
 	(junction
-		(at 35.56 44.45)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "438995c2-0442-4d23-b3ff-7b72d03a0145")
-	)
-	(junction
 		(at 58.42 158.75)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2320,10 +2314,10 @@
 		(uuid "e81f3789-2b63-4eee-9f3d-391a790b2627")
 	)
 	(junction
-		(at 40.64 44.45)
+		(at 36.83 44.45)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "fdb786d3-c539-4942-8bb7-67cb37c4df58")
+		(uuid "f0d50cb2-2637-4f59-9aa1-173554c80cf9")
 	)
 	(junction
 		(at 105.41 132.08)
@@ -4076,16 +4070,6 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 44.45) (xy 35.56 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "39cbf46d-665c-47c0-b1a3-862366eabc8e")
-	)
-	(wire
-		(pts
 			(xy 220.98 82.55) (xy 237.49 82.55)
 		)
 		(stroke
@@ -4103,6 +4087,16 @@
 			(type default)
 		)
 		(uuid "3c38c53b-ea32-4abe-91ec-c4f47247a670")
+	)
+	(wire
+		(pts
+			(xy 29.21 44.45) (xy 36.83 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c3a1b7f-1d28-4c83-a18a-cb2736eb6355")
 	)
 	(wire
 		(pts
@@ -4163,6 +4157,16 @@
 			(type default)
 		)
 		(uuid "3e5899fd-860f-41d2-a166-83e200d4cb57")
+	)
+	(wire
+		(pts
+			(xy 36.83 44.45) (xy 36.83 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e87ea24-1854-489b-aa8c-5ba40b15ebec")
 	)
 	(wire
 		(pts
@@ -4533,6 +4537,16 @@
 			(type default)
 		)
 		(uuid "574206e4-9802-4c05-b2a9-ea6367faf44e")
+	)
+	(wire
+		(pts
+			(xy 29.21 52.07) (xy 30.48 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "574f4027-4b87-4edd-9464-1ca82d92f944")
 	)
 	(wire
 		(pts
@@ -5196,6 +5210,16 @@
 	)
 	(wire
 		(pts
+			(xy 36.83 44.45) (xy 45.72 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8123c5da-bf87-4fda-bd07-b5a1b521f39c")
+	)
+	(wire
+		(pts
 			(xy 247.65 113.03) (xy 247.65 114.3)
 		)
 		(stroke
@@ -5706,16 +5730,6 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 44.45) (xy 40.64 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b5fde88b-3917-4c78-a987-e3eb65114e8a")
-	)
-	(wire
-		(pts
 			(xy 101.6 78.74) (xy 113.03 78.74)
 		)
 		(stroke
@@ -5923,6 +5937,16 @@
 			(type default)
 		)
 		(uuid "c69bfa7f-7f76-4e70-a568-6712fba275cb")
+	)
+	(wire
+		(pts
+			(xy 43.18 52.07) (xy 44.45 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c762dcce-50c7-4ff7-a142-b3259717ed2a")
 	)
 	(wire
 		(pts
@@ -6536,16 +6560,6 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 44.45) (xy 45.72 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fc8cc2d9-be2c-43ad-9e10-879f1deecb60")
-	)
-	(wire
-		(pts
 			(xy 220.98 49.53) (xy 237.49 49.53)
 		)
 		(stroke
@@ -6683,6 +6697,17 @@
 			)
 		)
 		(uuid "bdf0e180-032e-48f3-aba5-bd78b88546a7")
+	)
+	(text "LOROM\n\n\n\n\nHIROM"
+		(exclude_from_sim no)
+		(at 36.83 52.578 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d27b4f4c-76a0-45ec-97e7-4777187855b0")
 	)
 	(label "A_{11}"
 		(at 50.8 81.28 0)
@@ -8914,7 +8939,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 40.64 44.45 0)
+		(at 44.45 52.07 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8923,7 +8948,7 @@
 		(dnp no)
 		(uuid "58cfc933-7d2a-4c57-88fb-92af6c4fd992")
 		(property "Reference" "TP3"
-			(at 40.64 39.116 0)
+			(at 44.45 46.736 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8931,7 +8956,7 @@
 			)
 		)
 		(property "Value" "TPB1,27"
-			(at 40.64 39.37 0)
+			(at 44.45 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8940,7 +8965,7 @@
 			)
 		)
 		(property "Footprint" "Bucketmouse:TestPoint_THTPad_D1.5mm_Drill0.7mm"
-			(at 35.56 44.45 0)
+			(at 39.37 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8949,7 +8974,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 35.56 44.45 0)
+			(at 39.37 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8958,7 +8983,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 40.64 44.45 0)
+			(at 44.45 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8973,6 +8998,80 @@
 			(project "SNES_Basic_UV_1-1"
 				(path "/174e013e-6c2d-4e07-a41c-d66da3153f42/3fcebb72-8a4d-4e82-b228-0c6cfb7b62ec"
 					(reference "TP3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Jumper:Jumper_3_Open")
+		(at 36.83 52.07 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "5a3728e6-453f-439f-8acc-741b37257e61")
+		(property "Reference" "SJ19"
+			(at 36.83 53.848 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Jumper_3_Open"
+			(at 38.0999 54.61 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Bucketmouse:SJ_2"
+			(at 36.83 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 36.83 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Jumper, 3-pole, both open"
+			(at 36.83 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f0d9a742-4574-4ae4-b09f-9fc91cb40cb1")
+		)
+		(pin "2"
+			(uuid "3eab56c6-3110-48b4-a2ea-2e3e11816cc6")
+		)
+		(pin "3"
+			(uuid "56a9d1b4-5660-4024-a918-97d94e174d36")
+		)
+		(instances
+			(project "SNES_Basic_UV_1-1"
+				(path "/174e013e-6c2d-4e07-a41c-d66da3153f42/3fcebb72-8a4d-4e82-b228-0c6cfb7b62ec"
+					(reference "SJ19")
 					(unit 1)
 				)
 			)
@@ -9503,7 +9602,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 30.48 44.45 0)
+		(at 29.21 44.45 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9512,7 +9611,7 @@
 		(dnp no)
 		(uuid "84c8ba03-4171-4022-abfd-a3a031dc17ec")
 		(property "Reference" "TP1"
-			(at 30.48 39.116 0)
+			(at 29.21 39.116 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9520,7 +9619,7 @@
 			)
 		)
 		(property "Value" "TPB1,27"
-			(at 30.48 39.37 0)
+			(at 29.21 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9529,7 +9628,7 @@
 			)
 		)
 		(property "Footprint" "Bucketmouse:TestPoint_THTPad_D1.5mm_Drill0.7mm"
-			(at 25.4 44.45 0)
+			(at 24.13 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9538,7 +9637,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 25.4 44.45 0)
+			(at 24.13 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9547,7 +9646,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 30.48 44.45 0)
+			(at 29.21 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9961,7 +10060,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 35.56 44.45 0)
+		(at 29.21 52.07 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9970,7 +10069,7 @@
 		(dnp no)
 		(uuid "a8a07428-7bb2-4cf9-b477-94461060abd7")
 		(property "Reference" "TP2"
-			(at 35.56 39.116 0)
+			(at 29.21 46.736 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9978,7 +10077,7 @@
 			)
 		)
 		(property "Value" "TPB1,27"
-			(at 35.56 39.37 0)
+			(at 29.21 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9987,7 +10086,7 @@
 			)
 		)
 		(property "Footprint" "Bucketmouse:TestPoint_THTPad_D1.5mm_Drill0.7mm"
-			(at 30.48 44.45 0)
+			(at 24.13 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9996,7 +10095,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 30.48 44.45 0)
+			(at 24.13 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10005,7 +10104,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 35.56 44.45 0)
+			(at 29.21 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
