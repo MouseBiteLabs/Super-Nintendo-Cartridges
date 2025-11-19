@@ -84,13 +84,18 @@ Along with these groups, please also follow the configurations detailed in the f
 
 There are two sockets and two capacitors labeled "U2" and "C2," respectively. Only populate ONE set of these. Do not populate both. The 16-pin socket is for the original CIC chip from a donor cartridge, and the 8-pin socket is for the SuperCIC clone chip using the PIC12F629 that you have to program yourself. If your SNES is modded to be region-unlocked, then you don't need either of these chips.
 
+![image](https://github.com/user-attachments/assets/418e2e91-bff5-4f5e-a573-42a4e14b83d0)
+
 ### Hi/Lo Socket Selection
 
 If your game is the LoROM mapping type, solder U3 or U4 in the bottom set of sockets (labeled "LO" on the left side) and, if necessary, U6L or U8L. If your game is of the HiROM mapping type, solder U3 or U4 in the top set of sockets (labeled "HI" on the left side) and, if necessary, U6H or U8H.
+![image](https://github.com/user-attachments/assets/b025277b-328d-48e7-882c-1d86329230a3)
 
 ### Mapper Bypass Solder Jumper
 
 This is the only set of solder jumper pads on the front of the board. If your game does not use SRAM, then you must solder these pads together. **Do not solder these pads if your game uses SRAM.**
+
+![image](https://github.com/user-attachments/assets/6a72dfbc-f341-41cc-a9bc-4a80e5a9ae3e)
 
 ### LoRom/HiROM Solder Jumpers
 
@@ -101,6 +106,8 @@ For these 3-segment pads, use a solder bridge on the middle pad to either side d
 3) The four Lo/Hi jumpers at the top of the board only need to be set if you are using SRAM on the board
 4) The one Lo/Hi jumper in the middle of the board behind U4 only needs to be set if you are using the <a href="https://github.com/MouseBiteLabs/ROM-Adapter-Boards/tree/main/29F160%20to%20UV%20EPROM">29F160 to 27C160 adapter boards</a> in the U4 socket
 
+![image](https://github.com/user-attachments/assets/9df9b53d-48fd-416b-aa96-3ca9242051ef)
+
 ### SRAM Size
 
 The set of pads at the top left underneath the SRAM chip configure the size of the SRAM that the SNES will see. All pads must be configured if you are using SRAM, and each set of 2 should be soldered in the same direction. The example picture below shows a game configured for 256 Kbit of SRAM. **It is important to note these numbers represent the SRAM in BITS, not BYTES. To figure out the BYTES of SRAM, take the numbers here and divide by 8.**
@@ -110,6 +117,10 @@ The set of pads at the top left underneath the SRAM chip configure the size of t
 ### U4 Configuration Pads
 
 These two sets of 3-way jumpers only need to be set if you have something populated in U4. Solder the middle pads to the left if you are using a 27C160 UV EPROM, or solder the middle pads to the right if you are using my <a href="https://github.com/MouseBiteLabs/ROM-Adapter-Boards/tree/main/29F160%20to%20UV%20EPROM">29F160 to 27C160 adapter boards</a>.
+
+(Remember: the LoROM/HiROM pads to the right of these do not need to be set if you are using the 27C160.)
+
+![image](https://github.com/user-attachments/assets/c6d06e53-51ad-4fc9-88f6-23817e65e17c)
 
 ## Estimating Battery Life
 
