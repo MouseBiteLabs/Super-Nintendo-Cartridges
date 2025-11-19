@@ -48,7 +48,7 @@ You can use the zipped folder at any board fabricator you like. You may also buy
 
 ## Required Equipment
 
-- You will need basic tools, like a soldering iron, hot plate, and/or hot air rework station.
+- You will need basic tools, like a soldering iron.
 - You need a way to program the ROM chip(s). There are two ways I have programmed them in the past:
   - Using the <a href="https://xgecu.myshopify.com/products/xgecu-new-t48-tl866-3gprogrammer-v12-01-support-28000-ics-for-spi-nor-nand-flash-emmc-bga153-162-169-100-221-tsop-sop-plcc">T48 programmer</a> with my <a href="https://github.com/MouseBiteLabs/27C322-TL866-Adapter">27C322 to TL866 Programming Adatper</a> board. The programming adapter is compatible with the T48, and it allows you to program the 42-pin EPROMs (27C160 and 27C322) with the 40-pin T48 programmer.
   OR
