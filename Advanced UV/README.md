@@ -169,7 +169,7 @@ https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=686eaad9eb
 
 | Reference | Value/Part Number | Package              | Description                     | Source                                           |
 | --------- | ----------------- | -------------------- | ------------------------------- | ------------------------------------------------ |
-| B1        | CR2025            | CR2032               | Coin Cell Battery               | [https://mou.sr/3QhcXXc](https://mou.sr/3QhcXXc) |
+| B1        | CR2032            | CR2032               | Coin Cell Battery               | [https://mou.sr/3QhcXXc](https://mou.sr/3QhcXXc) |
 | CB        | 22u               | Radial 2.5mm spacing | Aluminum Electrolytic Capacitor | [https://mou.sr/4lzfiK1](https://mou.sr/4lzfiK1) |
 | C5        | 0.1u              | Radial 2.5mm spacing | Ceramic Capacitor               | [https://mou.sr/481ILov](https://mou.sr/481ILov) |
 | C8        | 0.1u              | Radial 2.5mm spacing | Ceramic Capacitor               | [https://mou.sr/481ILov](https://mou.sr/481ILov) |
