@@ -92,6 +92,7 @@ There are two sockets and two capacitors labeled "U2" and "C2," respectively. On
 ### Hi/Lo Socket Selection
 
 If your game is the LoROM mapping type, solder U3 or U4 in the bottom set of sockets (labeled "LO" on the left side) and, if necessary, U6L or U8L. If your game is of the HiROM mapping type, solder U3 or U4 in the top set of sockets (labeled "HI" on the left side) and, if necessary, U6H or U8H.
+
 ![image](https://github.com/user-attachments/assets/b025277b-328d-48e7-882c-1d86329230a3)
 
 ### Mapper Bypass Solder Jumper
