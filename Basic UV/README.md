@@ -1,5 +1,4 @@
 # Super Nintendo Basic UV Cartridge (SNES-4NJ8D-01C) 
-# UNDER CONSTRUCTION!! Most information is inaccurate.
 
 # Order at your own risk -- v1.1 is untested
 
@@ -138,46 +137,43 @@ The factor of 8760 is for converting years to hours (24 hours in a day, 365 days
 
 <a href="https://github.com/MouseBiteLabs/Super-Nintendo-Cartridges/wiki/Troubleshooting-Tips">Please check out the wiki pages for troubleshooting tips.</a>
 
-## Bill of Materials (BOM) - NEED UPDATE
+## Bill of Materials (BOM)
 
 The component groups required for the build you want to make are detailed above.
 
-### Group A - 4 MB ROM, No RAM
+### Group A - Up to 4 MB ROM, No RAM
+
+In the following table, choose **one** of the options for U2.
 
 | Reference | Value/Part Number | Package              | Description                     | Source                                           |
 | --------- | ----------------- | -------------------- | ------------------------------- | ------------------------------------------------ |
 | C1        | 22u               | Radial 2.5mm spacing | Aluminum Electrolytic Capacitor | [https://mou.sr/4lzfiK1](https://mou.sr/4lzfiK1) |
 | C2        | 0.1u              | Radial 2.5mm spacing | Ceramic Capacitor               | [https://mou.sr/481ILov](https://mou.sr/481ILov) |
-| C3        | 0.1u              | Radial 2.5mm spacing | Ceramic Capacitor               | [https://mou.sr/481ILov](https://mou.sr/481ILov) |
-| C6        | 0.1u              | Radial 2.5mm spacing | Ceramic Capacitor               | [https://mou.sr/481ILov](https://mou.sr/481ILov) |
-| C7        | 0.1u              | Radial 2.5mm spacing | Ceramic Capacitor               | [https://mou.sr/481ILov](https://mou.sr/481ILov) |
-| C9        | 0.1u              | Radial 2.5mm spacing | Ceramic Capacitor               | [https://mou.sr/481ILov](https://mou.sr/481ILov) |
-| U2A       | PIC12F629         | DIP-8                | PIC Microcontroller             | [https://mou.sr/3XuEZzO](https://mou.sr/3XuEZzO) |
-| U2B       | PIC12F629         | SOIC-8               | PIC Microcontroller             | [https://mou.sr/4dSUh90](https://mou.sr/4dSUh90) |
-| U3        | 27C322, 27C160    | DIP-42               | UV EPROM                        | AliExpress, eBay                                 |
-| U6        | 74HCT257          | DIP-16               | Multiplexer                     | [https://mou.sr/3EvChVI](https://mou.sr/3EvChVI) |
-| U7        | 74HCT257          | DIP-16               | Multiplexer                     | [https://mou.sr/3EvChVI](https://mou.sr/3EvChVI) |
-| U9        | 74HCT139          | DIP-16               | Decoder                         | [https://mou.sr/441VXuJ](https://mou.sr/441VXuJ) |
+| U2        | CIC               | DIP-16               | Region Lockout Chip             | Donor cartridge                                  |
+| U2        | PIC12F629         | DIP-8                | PIC Microcontroller             | [https://mou.sr/3XuEZzO](https://mou.sr/3XuEZzO) |
+| U2        | PIC12F629         | SOIC-8               | PIC Microcontroller             | [https://mou.sr/4dSUh90](https://mou.sr/4dSUh90) |
+
+In the following table, choose **one** of the following options for U3 or U4. If you use a part in U3, then populate C3. If you use a part in U4, populate C4.
+
+| Reference | Value/Part Number      | Package              | Description              | Source                                                                                                                                                                           |
+| --------- | ---------------------- | -------------------- | ------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| C3        | 0.1u                   | Radial 2.5mm spacing | Ceramic Capacitor        | [https://mou.sr/481ILov](https://mou.sr/481ILov)                                                                                                                                 |
+| C4        | 0.1u                   | Radial 2.5mm spacing | Ceramic Capacitor        | [https://mou.sr/481ILov](https://mou.sr/481ILov)                                                                                                                                 |
+| U3        | Mask ROM               | DIP-32/DIP-36        | Original SNES Mask ROM   | Donor Cartridge                                                                                                                                                                  |
+| U3        | 27C801                 | DIP-32               | UV EPROM                 | AliExpress, eBay                                                                                                                                                                 |
+| U3        | SNES-to-TSOP PCB       | DIP-36               | Adapter board for 29F016 | [https://github.com/MouseBiteLabs/ROM-Adapter-Boards/tree/main/SNES%20to%20TSOP](https://github.com/MouseBiteLabs/ROM-Adapter-Boards/tree/main/SNES%20to%20TSOP)                 |
+| U4        | 27C160                 | DIP-42               | UV EPROM                 | AliExpress, eBay                                                                                                                                                                 |
+| U4        | 29F160 to UV EPROM PCB | DIP-42               | Adapter board for 29F160 | [https://github.com/MouseBiteLabs/ROM-Adapter-Boards/tree/main/29F160%20to%20UV%20EPROM](https://github.com/MouseBiteLabs/ROM-Adapter-Boards/tree/main/29F160%20to%20UV%20EPROM) |
 
 ### Group B - adds 32 KB of RAM
 
 | Reference | Value/Part Number | Package              | Description                     | Source                                           |
 | --------- | ----------------- | -------------------- | ------------------------------- | ------------------------------------------------ |
-| B1        | CR2025            | CR2032               | Coin Cell Battery               | [https://mou.sr/3QhcXXc](https://mou.sr/3QhcXXc) |
+| B1        | CR2032            | CR2032               | Coin Cell Battery               | [https://mou.sr/3QhcXXc](https://mou.sr/3QhcXXc) |
 | CB        | 22u               | Radial 2.5mm spacing | Aluminum Electrolytic Capacitor | [https://mou.sr/4lzfiK1](https://mou.sr/4lzfiK1) |
 | C5        | 0.1u              | Radial 2.5mm spacing | Ceramic Capacitor               | [https://mou.sr/481ILov](https://mou.sr/481ILov) |
-| C8        | 0.1u              | Radial 2.5mm spacing | Ceramic Capacitor               | [https://mou.sr/481ILov](https://mou.sr/481ILov) |
-| D1        | BAT85             | DO-35-2              | Schottky Diode                  | [https://mou.sr/49GVT4m](https://mou.sr/49GVT4m) |
-| D2        | BAT85             | DO-35-2              | Schottky Diode                  | [https://mou.sr/49GVT4m](https://mou.sr/49GVT4m) |
-| D3        | BAT85             | DO-35-2              | Schottky Diode                  | [https://mou.sr/49GVT4m](https://mou.sr/49GVT4m) |
-| Q1        | 2N3904            | TO-92-3 / SOT-23-3   | NPN BJT                         | THT: [https://mou.sr/3HlkU91](https://mou.sr/3HlkU91), SMT: [https://mou.sr/3C8piaZ](https://mou.sr/3C8piaZ) |
 | R1        | 1k                | Axial                | Resistor                        | [https://mou.sr/4hYkrZr](https://mou.sr/4hYkrZr) |
-| R2        | 100k              | Axial                | Resistor                        | [https://mou.sr/3Ib4SgO](https://mou.sr/3Ib4SgO) |
-| R3        | 10k               | Axial                | Resistor                        | [https://mou.sr/42AN0WU](https://mou.sr/42AN0WU) |
-| R4        | 10k               | Axial                | Resistor                        | [https://mou.sr/42AN0WU](https://mou.sr/42AN0WU) |
-| R5        | 10k               | Axial                | Resistor                        | [https://mou.sr/42AN0WU](https://mou.sr/42AN0WU) |
 | U5        | AS6C62256         | DIP-28               | SRAM                            | [https://mou.sr/3HlZ0mh](https://mou.sr/3HlZ0mh) |
-| U8        | 74HCT139          | DIP-16               | Decoder                         | [https://mou.sr/441VXuJ](https://mou.sr/441VXuJ) |
 
 ### Group B (Optional) - adds 128 KB of RAM (instead of 32 KB)
 
@@ -190,29 +186,37 @@ Replace U5 in Group B above with the part detailed here, and add the other three
 | R7        | 10k               | Axial   | Resistor    | [https://mou.sr/42AN0WU](https://mou.sr/42AN0WU) |
 | U5        | AS6C1008          | DIP-32  | SRAM        | [https://mou.sr/3hNkGxg](https://mou.sr/3hNkGxg) |
 
-### Group C - Adds 4 MB ROM for ExLoROM/ExHiROM or multicarts
+### Group C - adds supporting circuitry for battery backed RAM (no donor cart)
 
-| Reference | Value/Part Number | Package              | Description       | Source                                           |
-| --------- | ----------------- | -------------------- | ----------------- | ------------------------------------------------ |
-| C4        | 0.1u              | Radial 2.5mm spacing | Ceramic Capacitor | [https://mou.sr/481ILov](https://mou.sr/481ILov) |
-| U4        | 27C322, 27C160    | DIP-42               | UV EPROM          | AliExpress, eBay                                 |
+| Reference | Value/Part Number | Package              | Description       | Source                                                   |
+| --------- | ----------------- | -------------------- | ----------------- | -------------------------------------------------------- |
+| C8        | 0.1u              | Radial 2.5mm spacing | Ceramic Capacitor | [https://mou.sr/481ILov](https://mou.sr/481ILov)         |
+| D1        | BAT85             | DO-35-2              | Schottky Diode    | [https://mou.sr/49GVT4m](https://mou.sr/49GVT4m)         |
+| D2        | BAT85             | DO-35-2              | Schottky Diode    | [https://mou.sr/49GVT4m](https://mou.sr/49GVT4m)         |
+| D3        | BAT85             | DO-35-2              | Schottky Diode    | [https://mou.sr/49GVT4m](https://mou.sr/49GVT4m)         |
+| Q1        | 2N3904            | TO-92-3 / SOT-23-3   | NPN BJT           | THT: https://mou.sr/3HlkU91, SMT: https://mou.sr/3C8piaZ |
+| R2        | 100k              | Axial                | Resistor          | [https://mou.sr/3Ib4SgO](https://mou.sr/3Ib4SgO)         |
+| R3        | 10k               | Axial                | Resistor          | [https://mou.sr/42AN0WU](https://mou.sr/42AN0WU)         |
+| R4        | 1k                | Axial                | Resistor          | [https://mou.sr/4hYkrZr](https://mou.sr/4hYkrZr)         |
+| R5        | 10k               | Axial                | Resistor          | [https://mou.sr/42AN0WU](https://mou.sr/42AN0WU)         |
+| U8        | 74HCT139          | DIP-16               | Decoder           | [https://mou.sr/441VXuJ](https://mou.sr/441VXuJ)         |
 
-### Group D - Enables multicart mode
+### Group D - adds supporting circuitry for battery backed RAM (donor cart)
 
-| Reference | Value/Part Number | Package              | Description       | Source                                           |
-| --------- | ----------------- | -------------------- | ----------------- | ------------------------------------------------ |
-| C10       | 0.1u              | Radial 2.5mm spacing | Ceramic Capacitor | [https://mou.sr/481ILov](https://mou.sr/481ILov) |
-| U10       | 74HCT74           | DIP-14               | Flip-flop         | [https://mou.sr/3YEiVo8](https://mou.sr/3YEiVo8) |
+| Reference | Value/Part Number | Package              | Description            | Source                                           |
+| --------- | ----------------- | -------------------- | ---------------------- | ------------------------------------------------ |
+| C6        | 0.1u              | Radial 2.5mm spacing | Ceramic Capacitor      | [https://mou.sr/481ILov](https://mou.sr/481ILov) |
+| U6        | MAD-1             | DIP-16               | Memory Address Decoder | Donor Cartridge                                  |
 
 ## Revision History
 
-### v1.1 - Re-release II
+### v1.1 - Release
 
 - Fix OEM CIC wiring
 - Fix MAD-1 wiring
 - Add jumpers and extra pins for 29F160 Adapter board support.
 
-### v1.0 - Re-release
+### v1.0 - Prototype
 
 - Release of the KiCad-ported version of my original SNES Basic cart design
 - Removed the "SRAM Enable" pads and made the SRAM always enabled
