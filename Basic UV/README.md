@@ -120,7 +120,7 @@ These two sets of 3-way jumpers only need to be set if you have something popula
 
 (Remember: the LoROM/HiROM pads to the right of these do not need to be set if you are using the 27C160.)
 
-![image](https://github.com/user-attachments/assets/c6d06e53-51ad-4fc9-88f6-23817e65e17c)
+![image](https://github.com/user-attachments/assets/0b4cef66-dab1-4a4a-a18a-6b03eccb6e33)
 
 ## Estimating Battery Life
 
