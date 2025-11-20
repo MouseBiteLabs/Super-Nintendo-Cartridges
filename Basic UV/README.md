@@ -59,6 +59,10 @@ You can use the zipped folder at any board fabricator you like. You may also buy
 
 <a href="https://github.com/MouseBiteLabs/Super-Nintendo-Cartridges/wiki/Preparing-the-ROM">Please check out the wiki pages on how to prepare the ROM and program the cartridge.</a>
 
+### Important note for 27C801
+
+If you are using a UV EPROM in the U3 socket (likely the 27C801), then the ROM file you load onto the chip must be swapbinned. This is covered in the wiki link above.
+
 ## Board Configurations
 
 This board is highly customizable. You *do not* need every single part on this board to make a game. The game you want to make is mainly dependent on the memory mapping (LoROM/HiROM), the ROM size, and the RAM size. Depending on your needs, you only need to solder on certain components, which you can find below in the BOM section. You will also need to configure the game with the various solder jumpers on the back of the board.
