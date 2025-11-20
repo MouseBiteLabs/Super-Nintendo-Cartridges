@@ -208,13 +208,21 @@ Replace U5 in Group B above with the part detailed here, and add the other three
 | C6        | 0.1u              | Radial 2.5mm spacing | Ceramic Capacitor      | [https://mou.sr/481ILov](https://mou.sr/481ILov) |
 | U6        | MAD-1             | DIP-16               | Memory Address Decoder | Donor Cartridge                                  |
 
+## Restrictions for v1.0
+
+If you have a v1.0 board, you are restricted to the following configurations:
+
+- Only a replacement CIC chip with the PIC12F629 can be used
+- MAD-1 is not supported (the wiring is wrong)
+- If you are using a 27C160 EPROM in U4, you must bend up pin 32 and separately wire it to a GND point (like pin 31 on the EPROM)
+
 ## Revision History
 
 ### v1.1 - Release
 
 - Fix OEM CIC wiring
 - Fix MAD-1 wiring
-- Add jumpers and extra pins for 29F160 Adapter board support.
+- Add jumpers and extra pins for 29F160 Adapter board support
 
 ### v1.0 - Prototype
 
