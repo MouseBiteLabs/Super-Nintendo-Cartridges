@@ -210,7 +210,7 @@ Replace U5 in Group B above with the part detailed here, and add the other three
 
 ## Restrictions for v1.0
 
-If you have a v1.0 board, you are restricted to the following configurations:
+If you have a v1.0 board, you have the following restrictions:
 
 - Only a replacement CIC chip with the PIC12F629 can be used
 - MAD-1 is not supported (the wiring is wrong)
