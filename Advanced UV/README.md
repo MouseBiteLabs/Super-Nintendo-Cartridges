@@ -180,7 +180,7 @@ https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=686eaad9eb
 | R1        | 1k                | Axial                | Resistor                        | [https://mou.sr/4hYkrZr](https://mou.sr/4hYkrZr) |
 | R2        | 100k              | Axial                | Resistor                        | [https://mou.sr/3Ib4SgO](https://mou.sr/3Ib4SgO) |
 | R3        | 10k               | Axial                | Resistor                        | [https://mou.sr/42AN0WU](https://mou.sr/42AN0WU) |
-| R4        | 10k               | Axial                | Resistor                        | [https://mou.sr/42AN0WU](https://mou.sr/42AN0WU) |
+| R4        | 1k                | Axial                | Resistor                        | [https://mou.sr/4hYkrZr](https://mou.sr/4hYkrZr) |
 | R5        | 10k               | Axial                | Resistor                        | [https://mou.sr/42AN0WU](https://mou.sr/42AN0WU) |
 | U5        | AS6C62256         | DIP-28               | SRAM                            | [https://mou.sr/3HlZ0mh](https://mou.sr/3HlZ0mh) |
 | U8        | 74HCT139          | DIP-16               | Decoder                         | [https://mou.sr/441VXuJ](https://mou.sr/441VXuJ) |
