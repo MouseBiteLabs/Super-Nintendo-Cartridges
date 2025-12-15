@@ -175,7 +175,7 @@ You will need to populate Group C1 or Group C2 in addition to Group B in order t
 
 | Reference | Value/Part Number   | Package              | Description                     | Source                                           |
 | --------- | ------------------- | -------------------- | ------------------------------- | ------------------------------------------------ |
-| B1        | CR2032              | CR2032               | Coin Cell Battery               | [https://mou.sr/3QhcXXc](https://mou.sr/3QhcXXc) |
+| B1        | CR2032              | CR2032               | Coin Cell Battery               | [https://mou.sr/3Wj2m0G](https://mou.sr/3Wj2m0G) |
 | R1        | 1k                  | 0603                 | Resistor                        | [https://mou.sr/3U0EvS4](https://mou.sr/3U0EvS4) |
 
 ### Group C1 - Adds Battery Management IC (Donor Cart)
