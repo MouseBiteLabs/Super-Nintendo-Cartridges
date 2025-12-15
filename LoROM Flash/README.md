@@ -192,7 +192,7 @@ Note 2: If you are using an AS6C62256, you can omit R14 and R15.
 
 | Reference | Value/Part Number   | Package        | Description        | Source                                           |
 | --------- | ------------------- | -------------- | ------------------ | ------------------------------------------------ |
-| B1        | CR2032              | CR2032         | Coin Cell Battery  | [https://mou.sr/3QhcXXc](https://mou.sr/3QhcXXc) |
+| B1        | CR2032              | CR2032         | Coin Cell Battery  | [https://mou.sr/3Wj2m0G](https://mou.sr/3Wj2m0G) |
 | C5        | 0.1u                | 0603           | Capacitor (MLCC)   | [https://mou.sr/3ENc15O](https://mou.sr/3ENc15O) |
 | C10       | 0.1u                | 0603           | Capacitor (MLCC)   | [https://mou.sr/3ENc15O](https://mou.sr/3ENc15O) |
 | C11       | 0.1u                | 0603           | Capacitor (MLCC)   | [https://mou.sr/3ENc15O](https://mou.sr/3ENc15O) |
