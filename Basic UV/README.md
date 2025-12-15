@@ -174,7 +174,7 @@ In the following table, choose **one** of the following options for U3 or U4. If
 
 | Reference | Value/Part Number | Package              | Description                     | Source                                           |
 | --------- | ----------------- | -------------------- | ------------------------------- | ------------------------------------------------ |
-| B1        | CR2032            | CR2032               | Coin Cell Battery               | [https://mou.sr/3QhcXXc](https://mou.sr/3QhcXXc) |
+| B1        | CR2032            | CR2032               | Coin Cell Battery               | [https://mou.sr/3Wj2m0G](https://mou.sr/3Wj2m0G) |
 | CB        | 22u               | Radial 2.5mm spacing | Aluminum Electrolytic Capacitor | [https://mou.sr/4lzfiK1](https://mou.sr/4lzfiK1) |
 | C5        | 0.1u              | Radial 2.5mm spacing | Ceramic Capacitor               | [https://mou.sr/481ILov](https://mou.sr/481ILov) |
 | R1        | 1k                | Axial                | Resistor                        | [https://mou.sr/4hYkrZr](https://mou.sr/4hYkrZr) |
