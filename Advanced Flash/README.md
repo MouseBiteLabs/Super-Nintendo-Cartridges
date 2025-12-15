@@ -194,7 +194,7 @@ Note: If you are making a multicart, you must use the AS6C1008 for U10.
 
 | Reference | Value/Part Number   | Package        | Description        | Source                                           |
 | --------- | ------------------- | -------------- | ------------------ | ------------------------------------------------ |
-| B1        | CR2032              | CR2032         | Coin Cell Battery  | [https://mou.sr/3QhcXXc](https://mou.sr/3QhcXXc) |
+| B1        | CR2032              | CR2032         | Coin Cell Battery  | [https://mou.sr/3Wj2m0G](https://mou.sr/3Wj2m0G) |
 | C5        | 0.1u                | 0603           | Capacitor (MLCC)   | [https://mou.sr/3ENc15O](https://mou.sr/3ENc15O) |
 | C6        | 0.1u                | 0603           | Capacitor (MLCC)   | [https://mou.sr/3ENc15O](https://mou.sr/3ENc15O) |
 | C10       | 0.1u                | 0603           | Capacitor (MLCC)   | [https://mou.sr/3ENc15O](https://mou.sr/3ENc15O) |
