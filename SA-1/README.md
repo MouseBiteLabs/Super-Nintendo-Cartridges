@@ -16,7 +16,7 @@ All gerbers and source files can be found in this repo, as again, this project i
 
 ## V1.0 Error
 
-If you wish to use this board as-is right now, you can use this web applet by Bonzo to fix your ROM before programming it: https://eprom-pin-swapper.vercel.app/?preset=bmsa1
+If you have a v1.0 board, you can use this web applet by Bonzo to fix your ROM before programming it: https://eprom-pin-swapper.vercel.app/?preset=bmsa1
 
 You will need to do this to any ROM going onto a v1.0 board before soldering in the chip.
 
